@@ -1,0 +1,177 @@
+body {
+  background: #dedede;
+}
+header {
+  width: 100%;
+  height: 1.25rem;
+  position: relative;
+  border-bottom: 0.03125rem solid #1e1d1b;
+}
+header h1 {
+  background: #fff;
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+[data-dpr="2"] header h1 {
+  font-size: 28px;
+}
+[data-dpr="3"] header h1 {
+  font-size: 42px;
+}
+header .left {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../img/xiao_1.png") no-repeat center center;
+  background-size: 0.625rem 0.625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .right {
+  position: absolute;
+  top: 0;
+  right: 0.3125rem;
+  font-size: 10px;
+}
+[data-dpr="2"] header .right {
+  font-size: 20px;
+}
+[data-dpr="3"] header .right {
+  font-size: 30px;
+}
+.sec_1 {
+  width: 100%;
+  height: 4.6875rem;
+  border-bottom: 0.03125rem solid #1e1d1b;
+}
+.sec_1 img {
+  width: 100%;
+  height: 4.6875rem;
+}
+.sec_2 {
+  width: 100%;
+  background: #fff;
+}
+.sec_2 option {
+  font-weight: normal;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 option {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 option {
+  font-size: 36px;
+}
+.sec_2 .list {
+  width: 100%;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  box-sizing: border-box;
+  padding-left: 0.78125rem;
+  border-bottom: 0.03125rem solid #1e1d1b;
+}
+.sec_2 .list h2 {
+  float: left;
+  font-size: 12px;
+  font-weight: normal;
+}
+[data-dpr="2"] .sec_2 .list h2 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .list h2 {
+  font-size: 36px;
+}
+.sec_2 .list li {
+  float: left;
+  margin-left: 1.25rem;
+}
+.sec_2 .div_1 {
+  display: none;
+  width: 100%;
+  height: 0.9375rem;
+  box-sizing: border-box;
+  padding-left: 0.78125rem;
+  border-bottom: 0.03125rem solid #1e1d1b;
+  background: #fff;
+  line-height: 0.9375rem;
+}
+.sec_2 .div_1 input {
+  width: 6.25rem;
+  height: 0.78125rem;
+  line-height: 0.78125rem;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 .div_1 input {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .div_1 input {
+  font-size: 36px;
+}
+[data-dpr="2"] .sec_2 .div_1 input {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .div_1 input {
+  font-size: 36px;
+}
+.sec_2 .div_2 {
+  background: #fff;
+  width: 100%;
+  height: 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sec_2 .div_2 #detail {
+  display: flex;
+  justify-content: space-around;
+}
+.sec_2 .div_2 #detail select {
+  height: 0.625rem;
+}
+.sec_2 .list_2 {
+  width: 100%;
+}
+.sec_2 .list_2 li {
+  width: 100%;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  box-sizing: border-box;
+  padding-left: 0.78125rem;
+  border-top: 0.03125rem solid #1e1d1b;
+}
+.sec_2 .list_2 li input {
+  font-size: 12px;
+  width: 3.125rem;
+  height: 0.625rem;
+}
+[data-dpr="2"] .sec_2 .list_2 li input {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .list_2 li input {
+  font-size: 36px;
+}
+.div_3 {
+  width: 100%;
+  margin-top: 1.5625rem;
+}
+.div_3 .btn_1 {
+  width: 8.75rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  margin: 0 0.625rem;
+  border: 0.03125rem solid #1e1d1b;
+  border-radius: 0.15625rem;
+  background: #fff;
+  font-size: 12px;
+}
+[data-dpr="2"] .div_3 .btn_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .div_3 .btn_1 {
+  font-size: 36px;
+}

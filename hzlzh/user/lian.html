@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/lian.css">
+    <script src="../js/flexible.debug.js"></script>
+    <script src="../js/flexible_css.debug.js"></script>
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.cxselect.js"></script>
+    <title>联盟商</title>
+</head>
+<body>
+<header>
+    <h1><span class="left"></span>联盟商
+        <span class="right"><span class="id_1">ID:</span><span class="id">123456789</span></span>
+    </h1>
+</header>
+<section class="sec_1">
+    <ul class="list">
+        <li  class="li_1">
+            <p id="element_id">所属行业:
+                <select class="select_1 other" data-first-title="选择省">
+                    <option value="" selected>请选择所属行业</option>
+                    <option value="浙江省">浙江省</option>
+                </select>
+            </p>
+        </li>
+        <li>
+            <p>营业执照号:<input type="text" class="text_1" placeholder="请输入营业执照注册号" ></p>
+        </li>
+        <li>
+            <p>店铺名称:<input type="text" class="text_2" placeholder="请输入企业名称"></p>
+        </li>
+        <li>
+            <p>法定代表人:<input type="text" class="text_3" placeholder="请输入营业执照的法人名字"></p>
+        </li>
+        <li>
+            <p>运营者姓名:<input type="text" class="text_4" placeholder="请输入真实姓名"></p>
+        </li>
+        <li>
+            <p>运营者身份证:<input type="text" class="text_5" placeholder="请输入身份证号"></p>
+        </li>
+        <li class="li_2">
+            <p id="detail">详细地址：
+                <select class="province other" data-first-title="选择省">
+                </select>
+                <select class="city" data-first-title="选择市"></select>
+                <select class="area" data-first-title="选择县/区"></select>
+                <textarea name="" placeholder="请输入街道后详细地址" id="de" ></textarea>
+            </p>
+        </li>
+        <li>
+            <div class="div_1">
+                <p>营业执照照片:</p>
+                <img class="chuan" src="../img/img.png" alt="图片">
+                <a href="javascript:;" class="upload"><input type="file" class="ipt_1" >选择文件</a>
+                <span>jpg格式，大小不超过2M</span>
+            </div>
+        </li>
+    </ul>
+    <div class="div_2">
+        <button class="btn_2">提交审核</button>
+    </div>
+</section>
+<script src="../js/lian.js"></script>
+</body>
+</html>

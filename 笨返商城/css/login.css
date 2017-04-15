@@ -1,0 +1,101 @@
+.wrap {
+  width: 100%;
+}
+.wrap form {
+  width: 280px;
+  margin: 80px auto 0;
+}
+.wrap form .div_1,
+.wrap form .div_2 {
+  position: relative;
+  background: #fff;
+  height: 40px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 5px;
+  width: 100%;
+}
+.wrap form .div_1 label,
+.wrap form .div_2 label {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 14px;
+}
+.wrap form .div_1 input,
+.wrap form .div_2 input {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 220px;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.wrap form .div_3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 120px auto 0;
+  width: 280px;
+}
+.wrap form .div_3 button {
+  height: 40px;
+  background: #1cc91c;
+  flex-basis: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.wrap form .error {
+  display: none;
+  margin: 0 auto 10px;
+  width: 280px;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+}
+.wrap form .error p {
+  height: 30px;
+  line-height: 30px;
+  color: #f00;
+  text-indent: 2em;
+}
+.wrap .div_4 {
+  width: 280px;
+  margin: 0 auto;
+  height: 30px;
+}
+.wrap .div_4 ul {
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.wrap .div_4 ul li {
+  text-align: center;
+}
+.wrap .div_4 ul li a {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  color: #1e1d1b;
+}
+.mui-content,
+.mui-input-group,
+.mui-input-group:before,
+.mui-input-group:after,
+.mui-input-group .mui-input-row:after {
+  background: none;
+}
+.mui-error {
+  padding: 0;
+}

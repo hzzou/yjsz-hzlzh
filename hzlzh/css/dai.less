@@ -1,0 +1,139 @@
+@rem:64rem;
+
+.font-size(@size:12px){
+  font-size:@size;
+  [data-dpr="2"] &{
+    font-size:@size*2;
+  }
+  [data-dpr="3"] &{
+    font-size:@size*3;
+  }
+}
+body{
+  background:#dedede;
+}
+header{
+  width:100%;
+  height:80/@rem;
+  position:relative;
+  border-bottom:2/@rem solid #1e1d1b;
+  h1{
+    background:#fff;
+    width:100%;
+    height:80/@rem;
+    line-height:80/@rem;
+    text-align:center;
+    .font-size(14px);
+    font-weight:normal;
+  }
+  .left{
+    display:inline-block;
+    width:80/@rem;
+    height:80/@rem;
+    background:url("../img/xiao_1.png") no-repeat center center;
+    background-size:40/@rem 40/@rem;
+    position:absolute;
+    left:0; top:0;
+  }
+  .right{
+    position:absolute;
+    top:0; right:20/@rem;
+    .font-size(10px);
+  }
+}
+.sec_1{
+  width:100%;
+  height:300/@rem;
+  border-bottom:2/@rem solid #1e1d1b;
+  img{
+    width:100%;
+    height:300/@rem;
+  }
+}
+.sec_2{
+  width:100%;
+  background:#fff;
+  option{
+    font-weight:normal;
+    .font-size();
+  }
+  .list{
+    width:100%;
+    height:60/@rem;
+    line-height:60/@rem;
+    box-sizing:border-box;
+    padding-left:50/@rem;
+    border-bottom:2/@rem solid #1e1d1b;
+    h2{
+      float:left;
+      .font-size();
+      font-weight:normal;
+    }
+    li{
+      float:left;
+      margin-left:80/@rem;
+    }
+  }
+  .div_1{
+    display:none;
+    width:100%;
+    height:60/@rem;
+    box-sizing:border-box;
+    padding-left:50/@rem;
+    border-bottom:2/@rem solid #1e1d1b;
+    background:#fff;
+    line-height:60/@rem;
+    input{
+      .font-size();
+      width:400/@rem;
+      height:50/@rem;
+      line-height:50/@rem;
+      .font-size();
+    }
+  }
+  .div_2{
+    background:#fff;
+    width:100%;
+    height:100/@rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    #detail{
+      display:flex;
+      justify-content:space-around;
+      select{
+        height:40/@rem;
+      }
+    }
+  }
+  .list_2{
+    width:100%;
+    li{
+      width:100%;
+      height:60/@rem;
+      line-height:60/@rem;
+      box-sizing:border-box;
+      padding-left:50/@rem;
+      border-top:2/@rem solid #1e1d1b;
+      input{
+        .font-size();
+        width:200/@rem;
+        height:40/@rem;
+      }
+    }
+  }
+}
+.div_3{
+  width:100%;
+  margin-top:100/@rem;
+  .btn_1{
+    width:560/@rem;
+    height:60/@rem;
+    line-height:60/@rem;
+    margin: 0 40/@rem;
+    border:2/@rem solid #1e1d1b;
+    border-radius:10/@rem;
+    background:#fff;
+    .font-size();
+  }
+}

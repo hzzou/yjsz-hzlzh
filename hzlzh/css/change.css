@@ -1,0 +1,200 @@
+body {
+  background: url(../img/01.jpg);
+  background-size: 100% 100%;
+}
+.wrap {
+  width: 100%;
+}
+.wrap header {
+  width: 100%;
+  height: 1.25rem;
+  position: relative;
+}
+.wrap header h1 {
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  background: #1e1d1b;
+  color: #fff;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+}
+[data-dpr="2"] .wrap header h1 {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap header h1 {
+  font-size: 42px;
+}
+.wrap header h1 .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../img/xiao.png") no-repeat center center;
+  background-size: 0.625rem 0.625rem;
+}
+.wrap form {
+  width: 8.75rem;
+  margin: 2.5rem auto 0;
+}
+.wrap form .div_1,
+.wrap form .div_2,
+.wrap form .div_3 {
+  position: relative;
+}
+.wrap form .div_1 label,
+.wrap form .div_2 label,
+.wrap form .div_3 label {
+  display: flex;
+  justify-content: space-between;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  font-size: 14px;
+}
+[data-dpr="2"] .wrap form .div_1 label,
+[data-dpr="2"] .wrap form .div_2 label,
+[data-dpr="2"] .wrap form .div_3 label {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_1 label,
+[data-dpr="3"] .wrap form .div_2 label,
+[data-dpr="3"] .wrap form .div_3 label {
+  font-size: 42px;
+}
+.wrap form .div_1 input,
+.wrap form .div_2 input,
+.wrap form .div_3 input {
+  position: absolute;
+  top: 0;
+  left: 1.5625rem;
+  width: 7.03125rem;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 0.09375rem;
+  font-size: 14px;
+}
+[data-dpr="2"] .wrap form .div_1 input,
+[data-dpr="2"] .wrap form .div_2 input,
+[data-dpr="2"] .wrap form .div_3 input {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_1 input,
+[data-dpr="3"] .wrap form .div_2 input,
+[data-dpr="3"] .wrap form .div_3 input {
+  font-size: 42px;
+}
+.wrap form .div_1,
+.wrap form .div_2 {
+  background: #fff;
+  height: 1.25rem;
+  margin-bottom: 0.3125rem;
+  box-sizing: border-box;
+  border-radius: 0.15625rem;
+  padding-left: 0.15625rem;
+}
+.wrap form .div_3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.3125rem;
+}
+.wrap form .div_3 button {
+  height: 1.25rem;
+  background: #1cc91c;
+  flex-basis: 100%;
+  border: none;
+  font-size: 14px;
+  border-radius: 0.15625rem;
+  color: #fff;
+  margin-bottom: 0.3125rem;
+}
+[data-dpr="2"] .wrap form .div_3 button {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_3 button {
+  font-size: 42px;
+}
+.wrap form .error {
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 0.625rem;
+  height: 0.9375rem;
+}
+.wrap form .error p {
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  font-size: 12px;
+  color: #f00;
+}
+[data-dpr="2"] .wrap form .error p {
+  font-size: 24px;
+}
+[data-dpr="3"] .wrap form .error p {
+  font-size: 36px;
+}
+.wrap form .div_4 {
+  margin: 0 auto;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 0.15625rem;
+  margin-bottom: 0.3125rem;
+  padding-left: 0.15625rem;
+  width: 8.75rem;
+  height: 1.25rem;
+  position: relative;
+}
+.wrap form .div_4 label {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
+}
+[data-dpr="2"] .wrap form .div_4 label {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_4 label {
+  font-size: 42px;
+}
+.wrap form .div_4 input {
+  position: absolute;
+  top: 0;
+  left: 1.5625rem;
+  width: 3.125rem;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 0.09375rem;
+  font-size: 14px;
+}
+[data-dpr="2"] .wrap form .div_4 input {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_4 input {
+  font-size: 42px;
+}
+.wrap form .div_4 .btn_y {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.125rem;
+  height: 100%;
+  background: #1cc91c;
+  border: none;
+  font-size: 12px;
+  border-radius: 0.15625rem;
+  color: #fff;
+}
+[data-dpr="2"] .wrap form .div_4 .btn_y {
+  font-size: 24px;
+}
+[data-dpr="3"] .wrap form .div_4 .btn_y {
+  font-size: 36px;
+}

@@ -1,0 +1,13 @@
+{
+  "plus/doc.html": {
+    "href": "plus/doc.html",
+    "resources": [],
+    "priority": 0
+  },
+  "login/login.html": {
+    "href": "login/login.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}

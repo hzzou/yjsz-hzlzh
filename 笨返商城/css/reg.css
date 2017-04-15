@@ -1,0 +1,140 @@
+.wrap {
+  width: 100%;
+}
+.wrap form {
+  width: 280px;
+  margin: 60px auto 0;
+}
+.wrap form .div_0,
+.wrap form .div_1,
+.wrap form .div_2,
+.wrap form .div_4 {
+  position: relative;
+  background: #fff;
+  height: 40px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+.wrap form .div_0 label,
+.wrap form .div_1 label,
+.wrap form .div_2 label,
+.wrap form .div_4 label {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  font-size: 14px;
+}
+.wrap form .div_0 input,
+.wrap form .div_1 input,
+.wrap form .div_2 input,
+.wrap form .div_4 input {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 180px;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 3px;
+  font-size: 14px;
+}
+.wrap form .div_0 input {
+  width: 100px;
+  padding-right: 0;
+}
+.wrap form .div_0 .tui {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 3px;
+  font-size: 14px;
+}
+.wrap form .div_0 p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1cc91c;
+  width: 100px;
+  height: 100%;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 14px;
+}
+.wrap form .div_0 p .btn_s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  border: none;
+}
+.wrap form .div_3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 60px 0 10px;
+}
+.wrap form .div_3 button {
+  height: 40px;
+  background: #1cc91c;
+  flex-basis: 100%;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.wrap form .error {
+  display: none;
+  margin: 0 auto 10px;
+  width: 280px;
+  box-sizing: border-box;
+  height: 30px;
+  line-height: 30px;
+}
+.wrap form .error p {
+  height: 30px;
+  line-height: 30px;
+  color: #f00;
+  text-indent: 2em;
+  font-size: 12px;
+}
+.wrap form .div_4 input {
+  width: 100px;
+  padding-right: 0;
+}
+.wrap form .div_4 .btn_y {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  background: #1cc91c;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff;
+}
+.mui-content,
+.mui-input-group,
+.mui-input-group:before,
+.mui-input-group:after,
+.mui-input-group .mui-input-row:after {
+  background: none;
+}
+.mui-error {
+  padding: 0;
+}
+.mui-input-row:last-child {
+  background-color: #bbb;
+}

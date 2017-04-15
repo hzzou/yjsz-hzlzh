@@ -1,0 +1,123 @@
+{
+	"login/change.html": {
+		"href": "login/change.html",
+		"resources": [
+			"js/flexible.debug.js",
+			"js/flexible_css.debug.js",
+			"js/jquery.js",
+			"css/reset.css",
+			"css/change.css",
+			"js/change.js",
+			"img/xiao.png",
+			"login/login.html"
+		],
+		"refer": [
+			"login/login.html"
+		],
+		"priority": 0
+	},
+	"login/regi.html": {
+		"href": "login/regi.html",
+		"resources": [
+			"js/flexible.debug.js",
+			"js/flexible_css.debug.js",
+			"js/jquery.js",
+			"css/reset.css",
+			"css/regi.css",
+			"js/regi.js",
+			"img/xiao.png",
+			"login/login.html",
+			"js/common.js",
+			"img/01.jpg",
+			"js/shortcut.js",
+			"js/immersed.js"
+		],
+		"refer": [
+			"plus/barcode_scan.html",
+			"login/login.html"
+		],
+		"priority": 0
+	},
+	"login/login.html": {
+		"href": "login/login.html",
+		"resources": [
+			"js/flexible.debug.js",
+			"js/flexible_css.debug.js",
+			"js/jquery.js",
+			"css/reset.css",
+			"css/login.css",
+			"js/login.js",
+			"img/01.jpg",
+			"js/shortcut.js",
+			"js/immersed.js",
+			"js/common.js",
+			"login/regi.html",
+			"login/change.html"
+		],
+		"refer": [
+			"login/change.html",
+			"login/regi.html",
+			"plus/oauth.html",
+			"plus/doc.html",
+			"user.html",
+			"user/user.html"
+		],
+		"priority": 0
+	},
+	"plus/oauth.html": {
+		"resources": [
+			"js/common.js",
+			"css/common.css",
+			"js/immersed.js"
+		],
+		"refer": []
+	},
+	"plus/barcode_scan.html": {
+		"resources": [
+			"css/common.css",
+			"js/common.js"
+		],
+		"refer": []
+	},
+	"plus/doc.html": {
+		"href": "plus/doc.html",
+		"resources": [
+			"js/immersed.js"
+		],
+		"refer": [],
+		"priority": 0
+	},
+	"user.html": {
+		"resources": [
+			"img/ben.png",
+			"css/user.css"
+		],
+		"refer": []
+	},
+	"user/user.html": {
+		"resources": [
+			"img/ben.png",
+			"user/sign.html",
+			"css/user.css",
+			"css/reset.css",
+			"js/user.js"
+		],
+		"refer": [
+			"user/sign.html"
+		]
+	},
+	"user/sign.html": {
+		"resources": [
+			"css/sign.css",
+			"img/xiao_1.png"
+		],
+		"refer": []
+	},
+	"login.html": {
+		"resources": [
+			"js/app.js",
+			"css/mui.min.css",
+			"js/mui.enterfocus.js"
+		]
+	}
+}

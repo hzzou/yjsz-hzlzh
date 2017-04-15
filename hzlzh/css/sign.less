@@ -1,0 +1,118 @@
+@rem:64rem;
+
+.font-size(@size:12px){
+  font-size:@size;
+
+  [data-dpr="2"] &{
+    font-size:@size*2;
+  }
+  [data-dpr="3"] &{
+    font-size:@size*3;
+  }
+}
+body{
+  background:#dedede;
+}
+header{
+  width:100%;
+  height:80/@rem;
+  position:relative;
+  border-bottom:2/@rem solid #1e1d1b;
+  h1{
+    background:#fff;
+    width:100%;
+    height:80/@rem;
+    line-height:80/@rem;
+    text-align:center;
+    .font-size();
+    font-weight:normal;
+  }
+  .left{
+    display:inline-block;
+    width:80/@rem;
+    height:80/@rem;
+    background:url("../img/xiao_1.png") no-repeat center center;
+    background-size:40/@rem 40/@rem;
+    position:absolute;
+    left:0; top:0;
+  }
+  .right{
+    position:absolute;
+    top:0; right:20/@rem;
+    .font-size(10px);
+  }
+}
+.sec_1{
+  width:100%;
+  height:200/@rem;
+  background:#fff;
+  position:relative;
+  .div_1, .div_2, .div_3{
+    position:absolute;
+    left:20/@rem;
+  }
+  .div_1{
+    top:30/@rem;
+  }
+  .div_2{
+    top:80/@rem;
+  }
+  .div_3{
+    top:130/@rem;
+    color:#f00;
+  }
+  a{
+    text-decoration:none;
+    position:absolute;
+    top:40/@rem; right:20/@rem;
+    display:inline-block;
+    width:120/@rem;
+    height:50/@rem;
+    line-height:50/@rem;
+    border:1px solid #1e1d1b;
+    border-radius:20/@rem;
+    text-align:center;
+    &:hover{
+      text-decoration:none;
+    }
+  }
+}
+.sec_2{
+  width:100%;
+  height:200/@rem;
+  line-height:200/@rem;
+  text-align:center;
+  .btn_1{
+    width:120/@rem;
+    height:120/@rem;
+    background:#fff;
+    border:2/@rem solid #1e1d1b;
+    border-radius:50%;
+    .font-size(16px);
+  }
+  .active{
+    background:#1cc91c;
+    color:#fff;
+  }
+}
+#my_date{
+  width:490/@rem;
+  margin:0 auto 50/@rem;
+  background:#fff;
+  table{
+    width:490/@rem;
+    thead{
+      border-bottom:2/@rem solid #1cc91c;
+    }
+    td{
+      width:70/@rem;
+      height:70/@rem;
+      text-align:center;
+      .font-size(14px);
+    }
+    .active{
+      background: #1cc91c;
+      border-radius:50%;
+    }
+  }
+}

@@ -1,0 +1,155 @@
+body {
+  background: #dedede;
+}
+header {
+  width: 100%;
+  height: 1.25rem;
+  position: relative;
+}
+header h1 {
+  background: #fff;
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+}
+[data-dpr="2"] header h1 {
+  font-size: 24px;
+}
+[data-dpr="3"] header h1 {
+  font-size: 36px;
+}
+header .left {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../img/xiao_1.png") no-repeat center center;
+  background-size: 0.625rem 0.625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .right {
+  position: absolute;
+  top: 0;
+  right: 0.3125rem;
+  font-size: 10px;
+}
+[data-dpr="2"] header .right {
+  font-size: 20px;
+}
+[data-dpr="3"] header .right {
+  font-size: 30px;
+}
+.sec_1 {
+  width: 100%;
+  border-top: 0.03125rem solid #1e1d1b;
+  padding-top: 0.46875rem;
+}
+.sec_1 .div_1,
+.sec_1 .div_2,
+.sec_1 .div_3,
+.sec_1 .div_4 {
+  background: #fff;
+  width: 9.375rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  box-sizing: border-box;
+  padding-left: 0.15625rem;
+  margin: 0 0.3125rem;
+}
+.sec_1 .div_1 input,
+.sec_1 .div_2 input,
+.sec_1 .div_3 input,
+.sec_1 .div_4 input {
+  height: 0.625rem;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_1 .div_1 input,
+[data-dpr="2"] .sec_1 .div_2 input,
+[data-dpr="2"] .sec_1 .div_3 input,
+[data-dpr="2"] .sec_1 .div_4 input {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_1 .div_1 input,
+[data-dpr="3"] .sec_1 .div_2 input,
+[data-dpr="3"] .sec_1 .div_3 input,
+[data-dpr="3"] .sec_1 .div_4 input {
+  font-size: 36px;
+}
+.sec_1 .div_2,
+.sec_1 .div_3,
+.sec_1 .div_4 {
+  margin-top: 0.15625rem;
+}
+.sec_1 .div_1 input {
+  width: 7.8125rem;
+}
+.sec_1 .div_2 input {
+  width: 7.0625rem;
+}
+.sec_1 .div_3 input {
+  width: 7.4375rem;
+}
+.sec_1 .div_4 {
+  position: relative;
+}
+.sec_1 .div_4 input {
+  width: 3.125rem;
+}
+.sec_1 .div_4 .btn_1 {
+  border: none;
+  font-size: 10px;
+  margin-left: 0.3125rem;
+  width: 2.1875rem;
+  height: 0.78125rem;
+  position: absolute;
+  border-radius: 0.15625rem;
+  background: #1cc91c;
+  color: #fff;
+  top: 0.078125rem;
+  right: 2.5rem;
+}
+[data-dpr="2"] .sec_1 .div_4 .btn_1 {
+  font-size: 20px;
+}
+[data-dpr="3"] .sec_1 .div_4 .btn_1 {
+  font-size: 30px;
+}
+.sec_1 .error {
+  width: 9.375rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  box-sizing: border-box;
+  padding-left: 0.15625rem;
+  margin: 0 0.3125rem;
+  color: #f00;
+}
+.sec_1 .phone {
+  display: none;
+}
+.sec_1 .yan {
+  display: none;
+}
+.sec_1 .div_5 {
+  width: 100%;
+  margin-top: 0.9375rem;
+  text-align: center;
+}
+.sec_1 .div_5 .btn_2 {
+  font-size: 12px;
+  width: 1.875rem;
+  height: 0.78125rem;
+  border-radius: 0.15625rem;
+  background: #1cc91c;
+  border: none;
+  color: #fff;
+}
+[data-dpr="2"] .sec_1 .div_5 .btn_2 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_1 .div_5 .btn_2 {
+  font-size: 36px;
+}

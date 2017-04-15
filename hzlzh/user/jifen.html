@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>积分明细</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/jifen.css">
+    <script src="../js/flexible.debug.js"></script>
+    <script src="../js/flexible_css.debug.js"></script>
+    <script src="../js/jquery.js"></script>
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+</head>
+<body>
+    <header>
+        <h1>
+            <span class="left"></span>积分明细
+            <span class="right"><span class="id_1">ID:</span><span class="id">123456789</span></span>
+        </h1>
+    </header>
+    <section class="sec_1">
+        <img src="../img/ben_1.png" alt="" class="img_1">
+    </section>
+    <section class="sec_2">
+        <ul class="list_1">
+            <li class="jin active">金元</li>
+            <li class="yin">银元</li>
+            <li class="tong">铜元</li>
+        </ul>
+        <div class="jin_1">
+            <div class="div_1">
+                <p class="total_1">
+                    <span class="zong">总收入:<span class="total">110.11</span>
+                    </span>
+                    <a class="chong" href="">提现</a>
+                    <a href="" class="ti">充值</a>
+                </p>
+                <p class="remain_1">
+                    <span class="yu">当前余额:<span class="remain">20.11</span>
+                    </span>
+                    <span class="ke_1">可提金额:<span class="ke">100.00</span>
+                    </span>
+                </p>
+            </div>
+            <div class="div_2">
+                <ul class="list_2">
+                    <!--<li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>
+                    <li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>
+                    <li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>-->
+                    <!-- 每次加载个，首先进来就加载10条 -->
+                </ul>
+            </div>
+        </div>
+        <div class="tong_1">
+            <div class="div_1">
+                <p class="total_1">
+                    <span class="zong">总收入:<span class="total">110.11</span>
+                    </span>
+                    <a class="chong" href="">提现</a>
+                    <a href="" class="ti">充值</a>
+                </p>
+                <p class="remain_1">
+                    <span class="yu">当前余额:<span class="remain">20.11</span>
+                    </span>
+                    <span class="ke_1">可提金额:<span class="ke">100.00</span>
+                    </span>
+                </p>
+            </div>
+            <div class="div_2">
+                <ul class="list_2">
+                    <!--<li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>
+                    <li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>
+                    <li class="li_1">
+                        <ul class="list_3">
+                            <li><span class="type">收支名称:</span><span class="type_1">铜元转金元</span></li>
+                            <li><span class="cash">收支金额:</span><span class="cash_1">31.22</span></li>
+                            <li><span class="re">当前余额:</span><span class="re_1">12.11</span></li>
+                            <li><span class="explain">简单说明:</span><span class="explain_1">签到获得昨天的昨天的转换金元</span></li>
+                            <li><span class="time">收支时间:</span><span class="time_1">2017-03-19 17:21</span></li>
+                        </ul>
+                    </li>-->
+                    <!-- 每次加载个，首先进来就加载10条 -->
+                </ul>
+            </div>
+        </div>
+        <div class="yin_1">
+            <p>银元暂未开放，尽情期待</p>
+        </div>
+    </section>
+    <script src="../js/jifen.js"></script>
+</body>
+</html>

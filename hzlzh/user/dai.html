@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/dai.css">
+    <script src="../js/flexible.debug.js"></script>
+    <script src="../js/flexible_css.debug.js"></script>
+    <!--<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>-->
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.cxselect.js"></script>
+    <title>申请代理</title>
+</head>
+<body>
+    <header>
+        <h1><span class="left"></span>申请代理
+        <span class="right"><span class="id_1">ID:</span><span class="id">123456789</span></span>
+    </h1>
+    </header>
+    <section class="sec_1">
+        <img src="../img/app.jpg" alt="">
+    </section>
+    <section class="sec_2">
+        <ul class="list">
+            <h2>代理类型:</h2>
+            <li><input type="radio" name="lei" checked class="all" value="all">全国代理</li>
+            <li><input type="radio" name="lei" class="part" value="part">区域代理</li>
+        </ul>
+        <div class="div_1">
+            <p>真实姓名: <input type="text" class="name_1" placeholder="请输入真实姓名"></p>
+        </div>
+        <div class="div_2">
+            <p id="detail">
+                <select class="province other" data-first-title="选择省">
+                    <option value="" selected>选择省</option>
+                    <option value="浙江省">浙江省</option>
+                </select>
+                <select class="city" data-first-title="选择市">
+                    <option value="" selected>选择市</option>
+                    <option value="杭州市">杭州市</option>
+                </select>
+                <select class="area" data-first-title="选择市">
+                    <option value="" selected>选择县/区</option>
+                    <option value="西湖区">西湖区</option>
+                </select>
+                <select class="jie" data-first-title="选择街道">选择街道</option>
+                    <option value="" selected>选择街道</option>
+                    <option value="中和街道">中和街道</option>
+                </select>
+            </p>
+        </div>
+        <ul class="list_2">
+            <li>
+                <p>代理份数:<input type="text" placeholder="请输入代理份数" class="num"></p>
+            </li>
+            <li>
+                <p id="hang">申请行业:
+                    <select class="select_1 other" data-first-title="选择省">
+                        <option value="" selected>请选择</option>
+                        <option value="浙江省">浙江省</option>
+                    </select>
+                </p>
+            </li>
+        </ul>
+    </section>
+    <div class="div_3">
+        <button class="btn_1">提交审核</button>
+    </div>
+    <script src="../js/dai.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+
+.wrap {
+  width: 100%;
+  header{
+    width:100%;
+    height:40px;
+    position:relative;
+    h1{
+      width:100%;
+      height:40px;
+      line-height:40px;
+      background: #1e1d1b;
+      color:#fff;
+      font-weight:normal;
+      text-align:center;
+    }
+  }
+  form{
+    width:280px;
+    margin:80px auto 0;
+    .div_1, .div_2, .div_4{
+      position:relative;
+      background:#fff;
+      height:40px;
+      margin-bottom:10px;
+      box-sizing:border-box;
+      border-radius:5px;
+      padding-left:5px;
+      width:100%;
+      label{
+        display:flex;
+        justify-content:space-between;
+        width:60px;
+        height:40px;
+        line-height:40px;
+        padding:0;
+        font-size:14px;
+      }
+      input{
+        position:absolute;
+        top:0; left:70px;
+        width:180px;
+        box-sizing:border-box;
+        height:100%;
+        padding-left:6px;
+        font-size:14px;
+      }
+    }
+    .div_3{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      margin-top:60px;
+      margin-bottom:20px;
+      button{
+        height:40px;
+        background:#1cc91c;
+        flex-basis:100%;
+        border:none;
+        font-size:14px;
+        border-radius:5px;
+        color:#fff;
+        margin-bottom:10px;
+      }
+    }
+    .error{
+      display:none;
+      margin:0 auto 10px;
+      width:280px;
+      box-sizing:border-box;
+      height:30px;
+      line-height:30px;
+      p{
+        height:30px;
+        line-height:30px;
+        color:#f00;
+        text-indent:2em;
+        font-size:12px;
+      }
+    }
+    .div_4{
+      input{
+           width:100px;
+           padding-right:0;
+       } 
+      .btn_y{
+        position:absolute;
+        top:0; right:0;
+        width:100px;
+        height:100%;
+        background:#1cc91c;
+        border:none;
+        font-size:14px;
+        border-radius:5px;
+        color:#fff;
+      }
+    }
+  }
+}
+
+.mui-content, .mui-input-group,
+.mui-input-group:before,
+.mui-input-group:after,
+.mui-input-group .mui-input-row:after{
+    background:none;
+}
+
+.mui-error{
+    padding:0;
+}
