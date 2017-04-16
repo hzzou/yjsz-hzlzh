@@ -101,7 +101,7 @@
         },
         "NativeObj":{
         	"description": "原生对象"
-        },"Share":{},"OAuth":{}
+        },"Share":{},"OAuth":{},"Payment":{}
 	},
 	"plus": {
 		"splashscreen": {
@@ -110,7 +110,7 @@
 		},
 		"runmode": "liberate",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
 		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
-		"distribute": {
+		"distribute": {"plugins":{"payment":{"weixin":{"description":"微信支付","appid":"wx96bdb3eb4996c7f2"}},"oauth":{"weixin":{"appid":"wx96bdb3eb4996c7f2","appsecret":"c169392ea31d25d12a36fa69aea38f16"}},"share":{"weixin":{"appid":"wx96bdb3eb4996c7f2","appsecret":"c169392ea31d25d12a36fa69aea38f16","description":"可选，微信分享"}}},
 			"apple": {
 				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
 				"mobileprovision": "",/*iOS应用打包配置文件*/
@@ -235,7 +235,8 @@
 					"login/main.html",
 					"login/reg.html",
 					"login/forget_password.html",
-					"login/change.html"
+					"login/change.html",
+					"user/user.html"
 				],
 				"priority": 0
 			},
@@ -246,9 +247,16 @@
 					"css/mui.min.css",
 					"css/reg.css",
 					"login/reg.html",
-					"css/reset.css"
+					"css/reset.css",
+					"js/common.js",
+					"js/app.js",
+					"js/mui.min.js",
+					"js/mui.enterfocus.js"
 				],
-				"refer": [],
+				"refer": [
+					"login/barcode_scan.html",
+					"login/login.html"
+				],
 				"priority": 0
 			},
 			"login/forget_password.html": {
@@ -309,7 +317,20 @@
 			"login/change.html": {
 				"resources": [
 					"css/change.css",
-					"css/mui.min.css"
+					"css/mui.min.css",
+					"fonts/mui.ttf",
+					"css/reset.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/user.html": {
+				"resources": [
+					"css/user.css",
+					"fonts/mui.ttf",
+					"images/ben.png",
+					"css/mui.min.css",
+					"css/reset.css"
 				],
 				"refer": [],
 				"priority": 0

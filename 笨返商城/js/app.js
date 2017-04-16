@@ -45,15 +45,12 @@
 		regInfo = regInfo || {};
 		regInfo.account = regInfo.account || '';
 		regInfo.password = regInfo.password || '';
-		if (regInfo.account.length < 5) {
+		/*if (regInfo.account.length < 5) {
 			return callback('用户名最短需要 5 个字符');
 		}
 		if (regInfo.password.length < 6) {
 			return callback('密码最短需要 6 个字符');
-		}
-		if (!checkEmail(regInfo.email)) {
-			return callback('邮箱地址不合法');
-		}
+		}*/
 		var users = JSON.parse(localStorage.getItem('$users') || '[]');
 		users.push(regInfo);
 		localStorage.setItem('$users', JSON.stringify(users));
@@ -96,7 +93,7 @@
 	};
 
 	/**
-	 * 获取应用本地配置
+	 * 设置应用本地配置
 	 **/
 	owner.setSettings = function(settings) {
 		settings = settings || {};
@@ -104,7 +101,7 @@
 	}
 
 	/**
-	 * 设置应用本地配置
+	 * 获取应用本地配置
 	 **/
 	owner.getSettings = function() {
 			var settingsText = localStorage.getItem('$settings') || "{}";

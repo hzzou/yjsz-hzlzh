@@ -3,11 +3,15 @@
 
 	<head>
 		<meta charset="utf-8">
+		<meta name="apple-touch-fullscreen" content="yes">
+    	<meta name="apple-mobile-web-app-capable" content="yes" />
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title></title>
+		<title>注册</title>
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/reg.css" />
+		<script src="../js/common.js"></script>
 	</head>
 
 	<body>
@@ -20,8 +24,8 @@
 			<form class="mui-input-group">
 				<div class="mui-input-row div_0">
 					<label><span>推</span><span>荐</span><span>人</span></label>
-					<input id='account' type="text" class="mui-input" placeholder="推荐人">
-					<p>扫描获取推荐人<input class="btn_s" type="button" id="../plus/barcode_scan.html" onclick="clicked(this.id,true,true)" value="扫描获取推荐人"></p>
+					<input id='tui' type="text" class="mui-input" placeholder="推荐人">
+					<p>扫描获取推荐人<input class="btn_s" type="button" id="barcode_scan.html" onclick="clicked(this.id,true,true)" value="扫描获取推荐人"></p>
 				</div>
 				<div class="mui-input-row div_1">
 					<label><span>手</span><span>机</span><span>号</span></label>
@@ -29,12 +33,12 @@
 				</div>
 				<div class="mui-input-row div_4">
 					<label><span>验</span><span>证</span><span>码</span></label>
-					<input  type="text" class="mui-input yan" placeholder="请输入验证码">
-						<button class="btn_y" type="button">获取验证码</button>
+					<input id="yan"  type="text" class="mui-input yan" placeholder="请输入验证码">
+						<button id="yan_y" class="btn_y" type="button">获取验证码</button>
 				</div>
 				<div class="mui-input-row div_2">
             <label><span>密</span><span>码</span></label>
-            <input id='password_confirm' class="pass_1 mui-input-clear mui-input" placeholder="请输入6-32位密码" type="password" >
+            <input id='password' class="pass_1 mui-input-clear mui-input" placeholder="请输入6-32位密码" type="password" >
         </div>
 				<div class="mui-input-row mui-error error">
 					<p class="">密码或手机号不正确</p>
@@ -51,42 +55,77 @@
 		</div>
 		
 		<script src="../js/mui.min.js"></script>
+		<script src="../js/mui.enterfocus.js"></script>
 		<script src="../js/app.js"></script>
 		<script>
 			(function($, doc) {
 				$.init();
 				$.plusReady(function() {
 					var settings = app.getSettings();
+					var mainPage = $.preload({
+						"id": 'main',
+						"url": 'change.html'
+					});
+					var main_loaded_flag = false;
+					mainPage.addEventListener("loaded",function () {
+						main_loaded_flag = true;
+					});
+					var toMain = function() {
+						var id = setInterval(function () {
+							if(!main_loaded_flag){
+								//plus.nativeUI.alert(1);
+								clearInterval(id);
+								$.fire(mainPage, 'show', null);
+								mainPage.show("pop-in");
+							}
+						},20);
+					};
 					var regButton = doc.getElementById('reg');
+					var tui = doc.getElementById('tui');
 					var accountBox = doc.getElementById('account');
 					var passwordBox = doc.getElementById('password');
-					var passwordConfirmBox = doc.getElementById('password_confirm');
-					var emailBox = doc.getElementById('email');
+					var yan = doc.getElementById('yan');
+					var yanButton = doc.getElementById('yan_y');
+					
+					yanButton.addEventListener('tap', function (){
+						$.ajax('',{
+							data:{
+								'account': accountBox.value
+							},
+							dataType:'json',//服务器返回json格式数据
+							type:'post',//HTTP请求类型
+							timeout:10000,//超时时间设置为10秒；
+							success:function(data){
+								
+							},
+							error:function(xhr,type,errorThrown){
+								
+							}
+						});
+					});
 					regButton.addEventListener('tap', function(event) {
 						var regInfo = {
-							account: accountBox.value,
-							password: passwordBox.value,
-							email: emailBox.value
+							'tuiValue':tui.value,
+							//'account': accountBox.value,
+							'password': passwordBox.value
 						};
-						var passwordConfirm = passwordConfirmBox.value;
-						if (passwordConfirm != regInfo.password) {
-							plus.nativeUI.toast('密码两次输入不一致');
-							return;
-						}
 						app.reg(regInfo, function(err) {
 							if (err) {
 								plus.nativeUI.toast(err);
 								return;
 							}
 							plus.nativeUI.toast('注册成功');
-							$.openWindow({
-								url: 'login.html',
-								id: 'login',
+							/*$.openWindow({
+								'url': 'http//www.baidu.com',
+								'id': 'login',
 								show: {
 									aniShow: 'pop-in'
 								}
-							});
+							});*/
+							toMain();
+							
 						});
+						
 					});
 				});
 			}(mui, document));
