@@ -44,7 +44,7 @@
 					<p class="">密码或手机号不正确</p>
 				</div>
 				<div class="div_3">
-				<a  id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</a>
+				<button type="button"  id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
 			</div>
 			</form>
 		</div>
@@ -62,23 +62,7 @@
 					var passwordBox = doc.getElementById('password');
 					var yan = doc.getElementById('yan');
 					var yanButton = doc.getElementById('yan_y');
-					var mainPage = $.preload({
-						"id": 'main',
-						"url": '../user/user.html'
-					});
-					var main_loaded_flag = false;
-					mainPage.addEventListener("loaded",function () {
-						main_loaded_flag = true;
-					});
-					var toMain = function() {
-						var id = setInterval(function () {
-							if(main_loaded_flag){
-								clearInterval(id);
-								$.fire(mainPage, 'show', null);
-								mainPage.show("pop-in");
-							}
-						},20);
-					};
+					
 					yanButton.addEventListener('tap', function (){
 						var reg = /^1[0-9]{10}$/;
 						if (!reg.test(accountBox.value)) {
@@ -119,7 +103,15 @@
 								timeout:10000,
 								success:function(data){
 									plus.nativeUI.alert(5);
-									plus.nativeUI.alert(JSON.stringify(data));				
+									plus.nativeUI.alert(JSON.stringify(data));
+									$.openWindow({
+										url:'http://www.baidu.com',
+										id:'id_0',
+										preload: true,
+										show: {
+											aniShow: 'pop-in'
+										}
+									});
 								},
 								error:function(xhr,type,errorThrown){
 									plus.nativeUI.alert(type);

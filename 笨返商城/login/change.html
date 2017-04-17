@@ -34,8 +34,8 @@
             <label><span>密</span><span>码</span></label>
             <input id="password" class="mui-input-clear pass_1" placeholder="请输入6-32位密码" type="text" >
         </div>
-        <div class="mui-input-row div_3">
-            <button id="btn_z" class="btn_z" type="button">提交</button>
+        <div class="div_3">
+            <button id="btn_z" class="btn_z mui-btn mui-btn-block mui-btn-primary" type="button">提交</button>
         </div>
 			</form>
 		</div>
@@ -49,23 +49,6 @@
 					var yan = doc.getElementById('yan');
 					var yanButton = doc.getElementById('btn_y');
 					var submitButton = doc.getElementById('btn_z');
-					var mainPage = $.preload({
-						"id": 'main',
-						"url": '../user/user.html'
-					});
-					var main_loaded_flag = false;
-					mainPage.addEventListener("loaded",function () {
-						main_loaded_flag = true;
-					});
-					var toMain = function() {
-						var id = setInterval(function () {
-							if(main_loaded_flag){
-								clearInterval(id);
-								$.fire(mainPage, 'show', null);
-								mainPage.show("pop-in");
-							}
-						},20);
-					};
 					
 					yanButton.addEventListener('tap', function (){
 						var reg = /^1[0-9]{10}$/;
@@ -107,7 +90,15 @@
 								timeout:10000,
 								success:function(data){
 									plus.nativeUI.alert(5);
-									plus.nativeUI.alert(JSON.stringify(data));				
+									plus.nativeUI.alert(JSON.stringify(data));
+									$.openWindow({
+										url:'http://www.baidu.com',
+										id:'id_2',
+										preload: true,
+										show:{
+											aniShow:'pop-in'
+										}
+									});
 								},
 								error:function(xhr,type,errorThrown){
 									plus.nativeUI.alert(type);

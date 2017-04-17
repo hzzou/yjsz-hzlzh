@@ -74,11 +74,14 @@
 					
 					
 					loginButton.addEventListener('tap', function() {
+						var waiting = plus.nativeUI.showWaiting();
 						var reg = /^1[0-9]{10}$/;
 						if (!reg.test(accountBox.value)) {
+							waiting.close();
 							plus.nativeUI.toast('账号为11位手机号');
 						}
-						else if (passwordBox.value.length < 6) {
+						else if ( passwordBox.value.length < 6) {
+							waiting.close();
 							plus.nativeUI.toast('密码最短为 6 个字符');
 						}
 						else{
@@ -92,10 +95,13 @@
 								type:'get',
 								timeout:10000,
 								success:function(data){
+									waiting.close();
 									plus.nativeUI.alert(5);
-									plus.nativeUI.alert(JSON.stringify(data));				
+									plus.nativeUI.alert(JSON.stringify(data));
+									toMain();
 								},
 								error:function(xhr,type,errorThrown){
+									waiting.close();
 									plus.nativeUI.alert(type);
 								}	
 							});	
@@ -109,10 +115,6 @@
 						auths[service.id]=service;
 						authButton.authId = service.id;
 						$('.div_3').on('tap','.btn_w', function(e){
-							if (this.classList.contains('disabled')) {
-									plus.nativeUI.toast('您尚未安装微信客户端');
-									return;
-								}
 								var auth = auths[this.authId];
 								var waiting = plus.nativeUI.showWaiting();
 								auth.login(function() {
@@ -121,7 +123,7 @@
 									auth.getUserInfo(function() {
 										plus.nativeUI.toast("获取用户信息成功");
 										var name = auth.userInfo.nickname || auth.userInfo.name;
-										/*mui.ajax('',{
+										$.ajax('http://blbsc.tunnel.qydev.com',{
 											data:{
 												
 											},
@@ -129,16 +131,16 @@
 											type:'post',//HTTP请求类型
 											timeout:10000,//超时时间设置为10秒；
 											success:function(data){
-												
+												//waiting.close();
+												//toMain();
 											},
 											error:function(xhr,type,errorThrown){
-												
+												waiting.close();
+												plus.nativeUI.alert(type);
 											}
-										});*/
+										});
 										plus.nativeUI.alert(JSON.stringify(auth.userInfo));
 										
-										waiting.close();
-										toMain();
 									}, function(e) {
 										waiting.close();
 										plus.nativeUI.toast("获取用户信息失败：" + e.message);
