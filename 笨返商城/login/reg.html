@@ -43,28 +43,28 @@
 				<div class="mui-input-row mui-error error">
 					<p class="">密码或手机号不正确</p>
 				</div>
-				<div class="mui-content-padded div_3">
-				<button id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</button>
+				<div class="div_3">
+				<a id='reg' class="mui-btn mui-btn-block mui-btn-primary">注册</a>
 			</div>
 			</form>
-			
-			<!--<div class="mui-content-padded">
-				<p>注册真实可用，注册成功后的用户可用于登录，但是示例程序并未和服务端交互，用户相关数据仅存储于本地。</p>
-			</div>-->
 		</div>
 		</div>
 		
 		<script src="../js/mui.min.js"></script>
 		<script src="../js/mui.enterfocus.js"></script>
-		<script src="../js/app.js"></script>
 		<script>
 			(function($, doc) {
 				$.init();
 				$.plusReady(function() {
-					var settings = app.getSettings();
+					var regButton = doc.getElementById('reg');
+					var tui = doc.getElementById('tui');
+					var accountBox = doc.getElementById('account');
+					var passwordBox = doc.getElementById('password');
+					var yan = doc.getElementById('yan');
+					var yanButton = doc.getElementById('yan_y');
 					var mainPage = $.preload({
 						"id": 'main',
-						"url": 'change.html'
+						"url": '../user/user.html'
 					});
 					var main_loaded_flag = false;
 					mainPage.addEventListener("loaded",function () {
@@ -72,60 +72,60 @@
 					});
 					var toMain = function() {
 						var id = setInterval(function () {
-							if(!main_loaded_flag){
-								//plus.nativeUI.alert(1);
+							if(main_loaded_flag){
 								clearInterval(id);
 								$.fire(mainPage, 'show', null);
 								mainPage.show("pop-in");
 							}
 						},20);
 					};
-					var regButton = doc.getElementById('reg');
-					var tui = doc.getElementById('tui');
-					var accountBox = doc.getElementById('account');
-					var passwordBox = doc.getElementById('password');
-					var yan = doc.getElementById('yan');
-					var yanButton = doc.getElementById('yan_y');
-					
 					yanButton.addEventListener('tap', function (){
-						$.ajax('',{
-							data:{
-								'account': accountBox.value
-							},
-							dataType:'json',//服务器返回json格式数据
-							type:'post',//HTTP请求类型
-							timeout:10000,//超时时间设置为10秒；
-							success:function(data){
-								
-							},
-							error:function(xhr,type,errorThrown){
-								
-							}
-						});
+						var reg = /^1[0-9]{10}$/;
+						if (!reg.test(accountBox.value)) {
+							plus.nativeUI.toast('账号为11位手机号');
+						}
+						else{
+							$.ajax('http://blbsc.tunnel.qydev.com/verifycode',{
+								data:{
+									'tel': accountBox.value
+								},
+								dataType:'json',//服务器返回json格式数据
+								type:'get',//HTTP请求类型
+								timeout:10000,//超时时间设置为10秒；
+								success:function(data){
+									plus.nativeUI.alert(5);
+									plus.nativeUI.alert(JSON.stringify(data));
+								},
+								error:function(xhr,type,errorThrown){
+									plus.nativeUI.toast(2);
+									plus.nativeUI.toast(type);
+								}
+							});
+						}
 					});
 					regButton.addEventListener('tap', function(event) {
-						var regInfo = {
-							'tuiValue':tui.value,
-							//'account': accountBox.value,
-							'password': passwordBox.value
-						};
-						app.reg(regInfo, function(err) {
-							if (err) {
-								plus.nativeUI.toast(err);
-								return;
-							}
-							plus.nativeUI.toast('注册成功');
-							/*$.openWindow({
-								'url': 'http//www.baidu.com',
-								'id': 'login',
-								show: {
-									aniShow: 'pop-in'
-								}
-							});*/
-							toMain();
-							
-						});
-						
+						if (passwordBox.value.length < 6) {
+							plus.nativeUI.toast('密码最短为 6 个字符');
+						}
+						else{
+							$.ajax('http://blbsc.tunnel.qydev.com/verifycode',{
+								data:{
+									'tui':tui.value,
+									'yan':yan.value,
+									'password':passwordBox.value
+								},
+								dataType:'json',
+								type:'get',
+								timeout:10000,
+								success:function(data){
+									plus.nativeUI.alert(5);
+									plus.nativeUI.alert(JSON.stringify(data));				
+								},
+								error:function(xhr,type,errorThrown){
+									plus.nativeUI.alert(type);
+								}	
+							});	
+						}
 					});
 				});
 			}(mui, document));

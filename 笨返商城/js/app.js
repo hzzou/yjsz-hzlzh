@@ -9,23 +9,12 @@
 	 **/
 	owner.login = function(loginInfo, callback) {
 		callback = callback || $.noop;
-		loginInfo = loginInfo || {};
-		loginInfo.account = loginInfo.account || '';
-		loginInfo.password = loginInfo.password || '';
-		if (loginInfo.account.length < 5) {
-			return callback('账号最短为 5 个字符');
+		var reg = /^1[0-9]{10}$/;
+		if (!reg.test(loginInfo.account)) {
+			return callback('账号为11位手机号');
 		}
 		if (loginInfo.password.length < 6) {
 			return callback('密码最短为 6 个字符');
-		}
-		var users = JSON.parse(localStorage.getItem('$users') || '[]');
-		var authed = users.some(function(user) {
-			return loginInfo.account == user.account && loginInfo.password == user.password;
-		});
-		if (authed) {
-			return owner.createState(loginInfo.account, callback);
-		} else {
-			return callback('用户名或密码错误');
 		}
 	};
 

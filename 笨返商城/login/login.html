@@ -25,10 +25,9 @@
 				</div>
 				<div class="mui-input-row mui-error error"><p>密码或手机号不正确</p></div>
 				<div class="div_3">
-				<button id="login">登录</button>
-				<button id="auth" class="btn_w">微信授权</button>
-				
-			</div>
+					<button id="login" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+					<button id="auth" class="btn_w mui-btn mui-btn-block mui-btn-primary">微信授权</button>
+				</div>
 			</form>
 			<div class="link-area div_4">
 				<ul>
@@ -39,7 +38,6 @@
 		</div>
 		<script src="../js/mui.min.js"></script>
 		<script src="../js/mui.enterfocus.js"></script>
-		<script src="../js/app.js"></script>
 		<script>
 			(function($, doc) {
 				$.init({
@@ -47,8 +45,8 @@
 				});
 				$.plusReady(function() {
 					plus.screen.lockOrientation("portrait-primary");
-					var settings = app.getSettings();
-					var state = app.getState();
+					//var settings = app.getSettings();
+					//var state = app.getState();
 					var mainPage = $.preload({
 						"id": 'main',
 						"url": '../user/user.html'
@@ -60,7 +58,6 @@
 					var toMain = function() {
 						var id = setInterval(function () {
 							if(main_loaded_flag){
-								plus.nativeUI.alert(1);
 								clearInterval(id);
 								$.fire(mainPage, 'show', null);
 								mainPage.show("pop-in");
@@ -69,39 +66,48 @@
 					};
 					
 					var loginButton = doc.getElementById('login');
-					var authButton = doc.getElementById('auth');
 					var accountBox = doc.getElementById('account');
 					var passwordBox = doc.getElementById('password');
+					var authButton = doc.getElementById('auth');
 					var regButton = doc.getElementById('reg');
 					var forgetButton = doc.getElementById('forgetPassword');
-					loginButton.addEventListener('tap', function(event) {
-						var loginInfo = {
-							account: accountBox.value,
-							password: passwordBox.value
-						};
-						app.login(loginInfo, function(err) {
-							if (err) {
-								plus.nativeUI.toast(err);
-								return;
-							}
-							toMain();
-						});
-					});
 					
+					
+					loginButton.addEventListener('tap', function() {
+						var reg = /^1[0-9]{10}$/;
+						if (!reg.test(accountBox.value)) {
+							plus.nativeUI.toast('账号为11位手机号');
+						}
+						else if (passwordBox.value.length < 6) {
+							plus.nativeUI.toast('密码最短为 6 个字符');
+						}
+						else{
+							$.ajax('http://blbsc.tunnel.qydev.com/verifycode',{
+								data:{
+									'username': accountBox.value,
+									'password': passwordBox.value
+								},
+								dataType:'json',
+								type:'get',
+								timeout:10000,
+								success:function(data){
+									plus.nativeUI.alert(5);
+									plus.nativeUI.alert(JSON.stringify(data));				
+								},
+								error:function(xhr,type,errorThrown){
+									plus.nativeUI.alert(type);
+								}	
+							});	
+						}
+					});
 					//第三方登录
-					app.setState(null);
 					var authBtn = ['weixin']; 
 					var auths = {};
 					plus.oauth.getServices(function(services) {
 						var service=services[0];
 						auths[service.id]=service;
-						if (~authBtn.indexOf(service.id)) {
-							var isInstalled = app.isInstalled(service.id);								
-							//如果微信未安装，则为不启用状态
-							authButton.setAttribute('class', 'btn_w' + (!isInstalled && service.id === 'weixin' ? ('disabled') : ''));
-							authButton.authId = service.id;
-						}
-						mui('.div_3').on('tap','.btn_w', function(e){
+						authButton.authId = service.id;
+						$('.div_3').on('tap','.btn_w', function(e){
 							if (this.classList.contains('disabled')) {
 									plus.nativeUI.toast('您尚未安装微信客户端');
 									return;
@@ -114,10 +120,24 @@
 									auth.getUserInfo(function() {
 										plus.nativeUI.toast("获取用户信息成功");
 										var name = auth.userInfo.nickname || auth.userInfo.name;
-										app.createState(name, function() {
-											waiting.close();
-											toMain();
-										});
+										/*mui.ajax('',{
+											data:{
+												
+											},
+											dataType:'json',//服务器返回json格式数据
+											type:'post',//HTTP请求类型
+											timeout:10000,//超时时间设置为10秒；
+											success:function(data){
+												
+											},
+											error:function(xhr,type,errorThrown){
+												
+											}
+										});*/
+										plus.nativeUI.alert(JSON.stringify(auth.userInfo));
+										
+										waiting.close();
+										toMain();
 									}, function(e) {
 										waiting.close();
 										plus.nativeUI.toast("获取用户信息失败：" + e.message);
@@ -182,6 +202,7 @@
 						}, 1000);
 						return false;
 					};
+					
 				});			
 				
 			}(mui, document));

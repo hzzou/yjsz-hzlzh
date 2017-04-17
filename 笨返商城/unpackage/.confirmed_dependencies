@@ -1,133 +1,139 @@
 {
-	"index.html": {
-		"resources": [
-			"js/mui.min.js",
-			"css/mui.min.css"
-		],
-		"refer": []
-	},
-	"login/login.html": {
-		"resources": [
-			"login/js/mui.enterfocus.js",
-			"login/js/app.js",
-			"js/mui.min.js",
-			"css/mui.min.css",
-			"login/images/sinaweibo.png",
-			"login/images/qq.png",
-			"login/images/weixin.png",
-			"login/css/style.css",
-			"js/flexible.js",
-			"login/images/01.jpg",
-			"css/mui.css",
-			"css/reset.css",
-			"login/login.html",
-			"js/mui.js",
-			"login/js/mui.min.js",
-			"fonts/mui.ttf",
-			"js/app.js",
-			"js/mui.enterfocus.js",
-			"images/01.jpg",
-			"css/style.css",
-			"css/login.css",
-			"login/css/login.css",
-			"login/js/mui.js",
-			"login/css/reset.css",
-			"login/css/mui.css",
-			"login/fonts/mui.ttf",
-			"js/login.js",
-			"login/js/login.js"
-		],
-		"refer": [
-			"login/main.html",
-			"login/reg.html",
-			"login/forget_password.html",
-			"login/login.html",
-			"login/change.html",
-			"user/user.html"
-		]
-	},
-	"login/reg.html": {
-		"resources": [
-			"login/css/style.css",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"css/reg.css",
-			"login/reg.html",
-			"css/reset.css",
-			"js/common.js",
-			"js/app.js",
-			"js/mui.min.js",
-			"js/mui.enterfocus.js"
-		],
-		"refer": [
-			"login/reg.html",
-			"login/barcode_scan.html",
-			"login/login.html"
-		]
-	},
-	"login/forget_password.html": {
-		"resources": [
-			"login/css/style.css",
-			"css/mui.min.css",
-			"login/fonts/mui.ttf",
-			"login/js/mui.min.js",
-			"login/css/reset.css",
-			"login/css/mui.css",
-			"css/change.css"
-		]
-	},
-	"login/main.html": {
-		"resources": [
-			"css/mui.css",
-			"js/mui.js",
-			"css/reset.css",
-			"login/js/app.js",
-			"login/js/mui.js",
-			"login/css/reset.css",
-			"login/css/mui.css",
-			"css/mui.min.css"
-		]
-	},
-	"login.html": {
-		"resources": [
-			"js/app.js",
-			"css/login.css",
-			"js/login.js",
-			"js/mui.js",
-			"css/mui.css",
-			"js/mui.enterfocus.js",
-			"css/reset.css",
-			"js/mui.min.js",
-			"images/sinaweibo.png",
-			"images/weixin.png",
-			"images/qq.png"
-		],
-		"refer": [
-			"main.html"
-		]
-	},
-	"main.html": {
-		"resources": [
-			"js/mui.js",
-			"css/mui.css",
-			"css/reset.css"
-		]
-	},
-	"login/change.html": {
-		"resources": [
-			"css/change.css",
-			"css/mui.min.css",
-			"fonts/mui.ttf",
-			"css/reset.css"
-		]
-	},
-	"user/user.html": {
-		"resources": [
-			"css/user.css",
-			"fonts/mui.ttf",
-			"images/ben.png",
-			"css/mui.min.css",
-			"css/reset.css"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "login/login.html": {
+    "resources": [
+      "login/js/mui.enterfocus.js",
+      "login/js/app.js",
+      "js/mui.min.js",
+      "css/mui.min.css",
+      "login/images/sinaweibo.png",
+      "login/images/qq.png",
+      "login/images/weixin.png",
+      "login/css/style.css",
+      "js/flexible.js",
+      "login/images/01.jpg",
+      "css/mui.css",
+      "css/reset.css",
+      "login/login.html",
+      "js/mui.js",
+      "login/js/mui.min.js",
+      "fonts/mui.ttf",
+      "js/app.js",
+      "js/mui.enterfocus.js",
+      "images/01.jpg",
+      "css/style.css",
+      "css/login.css",
+      "login/css/login.css",
+      "login/js/mui.js",
+      "login/css/reset.css",
+      "login/css/mui.css",
+      "login/fonts/mui.ttf",
+      "js/login.js",
+      "login/js/login.js"
+    ],
+    "refer": [
+      "login/main.html",
+      "login/reg.html",
+      "login/forget_password.html",
+      "login/login.html",
+      "login/change.html",
+      "user/user.html"
+    ]
+  },
+  "login/reg.html": {
+    "resources": [
+      "login/css/style.css",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/reg.css",
+      "login/reg.html",
+      "css/reset.css",
+      "js/common.js",
+      "js/app.js",
+      "js/mui.min.js",
+      "js/mui.enterfocus.js"
+    ],
+    "refer": [
+      "login/reg.html",
+      "login/barcode_scan.html",
+      "login/login.html",
+      "login/change.html"
+    ]
+  },
+  "login/forget_password.html": {
+    "resources": [
+      "login/css/style.css",
+      "css/mui.min.css",
+      "login/fonts/mui.ttf",
+      "login/js/mui.min.js",
+      "login/css/reset.css",
+      "login/css/mui.css",
+      "css/change.css"
+    ],
+    "refer": []
+  },
+  "login/main.html": {
+    "resources": [
+      "css/mui.css",
+      "js/mui.js",
+      "css/reset.css",
+      "login/js/app.js",
+      "login/js/mui.js",
+      "login/css/reset.css",
+      "login/css/mui.css",
+      "css/mui.min.css"
+    ],
+    "refer": []
+  },
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "css/login.css",
+      "js/login.js",
+      "js/mui.js",
+      "css/mui.css",
+      "js/mui.enterfocus.js",
+      "css/reset.css",
+      "js/mui.min.js",
+      "images/sinaweibo.png",
+      "images/weixin.png",
+      "images/qq.png"
+    ],
+    "refer": [
+      "main.html"
+    ]
+  },
+  "main.html": {
+    "resources": [
+      "js/mui.js",
+      "css/mui.css",
+      "css/reset.css"
+    ],
+    "refer": []
+  },
+  "login/change.html": {
+    "resources": [
+      "css/change.css",
+      "css/mui.min.css",
+      "fonts/mui.ttf",
+      "css/reset.css"
+    ],
+    "refer": []
+  },
+  "user/user.html": {
+    "resources": [
+      "css/user.css",
+      "fonts/mui.ttf",
+      "images/ben.png",
+      "css/mui.min.css",
+      "css/reset.css"
+    ],
+    "refer": []
+  }
 }

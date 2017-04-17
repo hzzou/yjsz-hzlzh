@@ -72,7 +72,9 @@
 	</nav>
 		<script src="../js/mui.min.js"></script>
 		<script type="text/javascript">
-			mui.init()
+			(function ($, doc){
+				$.init();
+			}(mui, document));
 		</script>
 	</body>
 

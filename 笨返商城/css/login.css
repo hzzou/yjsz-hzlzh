@@ -45,13 +45,13 @@
   width: 280px;
 }
 .wrap form .div_3 button {
-  height: 40px;
   background: #1cc91c;
   flex-basis: 100%;
   border: none;
   border-radius: 5px;
   color: #fff;
   margin-bottom: 10px;
+  font-size: 14px;
 }
 .wrap form .error {
   display: none;

@@ -229,13 +229,13 @@
 					"login/css/mui.css",
 					"login/fonts/mui.ttf",
 					"js/login.js",
-					"login/js/login.js"
+					"login/js/login.js",
+					"login/change.html"
 				],
 				"refer": [
 					"login/main.html",
 					"login/reg.html",
 					"login/forget_password.html",
-					"login/change.html",
 					"user/user.html"
 				],
 				"priority": 0
@@ -255,7 +255,8 @@
 				],
 				"refer": [
 					"login/barcode_scan.html",
-					"login/login.html"
+					"login/login.html",
+					"login/change.html"
 				],
 				"priority": 0
 			},
