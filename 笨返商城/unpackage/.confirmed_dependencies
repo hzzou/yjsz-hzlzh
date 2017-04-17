@@ -122,7 +122,8 @@
       "css/change.css",
       "css/mui.min.css",
       "fonts/mui.ttf",
-      "css/reset.css"
+      "css/reset.css",
+      "js/mui.min.js"
     ],
     "refer": []
   },

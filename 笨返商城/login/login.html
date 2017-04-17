@@ -25,8 +25,8 @@
 				</div>
 				<div class="mui-input-row mui-error error"><p>密码或手机号不正确</p></div>
 				<div class="div_3">
-					<button id="login" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
-					<button id="auth" class="btn_w mui-btn mui-btn-block mui-btn-primary">微信授权</button>
+					<button type="button" id="login" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+					<button type="button" id="auth" class="btn_w mui-btn mui-btn-block mui-btn-primary">微信授权</button>
 				</div>
 			</form>
 			<div class="link-area div_4">
@@ -84,8 +84,9 @@
 						else{
 							$.ajax('http://blbsc.tunnel.qydev.com/verifycode',{
 								data:{
-									'username': accountBox.value,
-									'password': passwordBox.value
+									'tel': accountBox.value
+									//'username': accountBox.value,
+									//'password': passwordBox.value
 								},
 								dataType:'json',
 								type:'get',
