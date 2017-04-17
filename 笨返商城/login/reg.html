@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/reg.css" />
 		<script src="../js/common.js"></script>
+		<script src="../js/jquery-1.10.1.min.js"></script>
 	</head>
 
 	<body>
@@ -121,6 +122,14 @@
 					});
 				});
 			}(mui, document));
+			
+			function scan(t, r, f){
+				if(r){
+					$('#tui').val(r);
+				} else{
+					$('#tui').val('');
+				}
+			}
 		</script>
 	</body>
 

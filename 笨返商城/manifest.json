@@ -251,7 +251,8 @@
 					"js/common.js",
 					"js/app.js",
 					"js/mui.min.js",
-					"js/mui.enterfocus.js"
+					"js/mui.enterfocus.js",
+					"js/jquery-1.10.1.min.js"
 				],
 				"refer": [
 					"login/barcode_scan.html",
@@ -333,6 +334,13 @@
 					"images/ben.png",
 					"css/mui.min.css",
 					"css/reset.css"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"login/barcode_scan.html": {
+				"resources": [
+					"js/common.js"
 				],
 				"refer": [],
 				"priority": 0
