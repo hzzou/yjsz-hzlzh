@@ -85,14 +85,13 @@
 							plus.nativeUI.toast('密码最短为 6 个字符');
 						}
 						else{
-							$.ajax('http://blbsc.tunnel.qydev.com/verifycode',{
+							$.ajax('http://blbsc.tunnel.qydev.com/login',{
 								data:{
-									'tel': accountBox.value
-									//'username': accountBox.value,
-									//'password': passwordBox.value
+									'tel': accountBox.value,
+									'password': passwordBox.value
 								},
 								dataType:'json',
-								type:'get',
+								type:'post',
 								timeout:10000,
 								success:function(data){
 									waiting.close();
@@ -137,6 +136,7 @@
 											error:function(xhr,type,errorThrown){
 												waiting.close();
 												plus.nativeUI.alert(type);
+												toMain();
 											}
 										});
 										plus.nativeUI.alert(JSON.stringify(auth.userInfo));

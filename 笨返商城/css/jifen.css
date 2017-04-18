@@ -1,0 +1,247 @@
+body {
+  background: #fff;
+}
+header {
+  width: 100%;
+  height: 1.25rem;
+  background: #fff;
+  color: #1e1d1b;
+  position: relative;
+  font-size: 12px;
+}
+[data-dpr="2"] header {
+  font-size: 24px;
+}
+[data-dpr="3"] header {
+  font-size: 36px;
+}
+header h1 {
+  font-size: 12px;
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-weight: normal;
+}
+[data-dpr="2"] header h1 {
+  font-size: 24px;
+}
+[data-dpr="3"] header h1 {
+  font-size: 36px;
+}
+header h1 .left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../images/xiao_1.png") no-repeat center center;
+  background-size: 0.625rem 0.625rem;
+}
+header h1 .right {
+  float: right;
+  position: absolute;
+  right: 0.46875rem;
+  top: 0;
+  display: inline-block;
+  height: 1.25rem;
+  font-size: 10px;
+}
+[data-dpr="2"] header h1 .right {
+  font-size: 20px;
+}
+[data-dpr="3"] header h1 .right {
+  font-size: 30px;
+}
+.sec_1 {
+  width: 100%;
+  height: 3.125rem;
+  border-top: 0.03125rem solid #1e1d1b;
+}
+.sec_1 img {
+  width: 100%;
+  height: 3.125rem;
+}
+.sec_2 {
+  width: 100%;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 {
+  font-size: 36px;
+}
+.sec_2 .list_1 {
+  width: 100%;
+  box-sizing: border-box;
+  border-top: 0.03125rem solid #1e1d1b;
+  border-bottom: 0.03125rem solid #1e1d1b;
+  height: 1.09375rem;
+}
+.sec_2 .list_1 li {
+  float: left;
+  height: 1.09375rem;
+  line-height: 1.09375rem;
+  box-sizing: border-box;
+  width: 33.33333333%;
+  border-right: 0.03125rem solid #1e1d1b;
+  margin-right: -1px;
+  text-align: center;
+}
+.sec_2 .list_1 li:last-of-type {
+  border-right: none;
+}
+.sec_2 .list_1 .active {
+  background: #1e1d1b;
+  color: #fff;
+}
+.sec_2 .jin_1,
+.sec_2 .tong_1 {
+  font-size: 12px;
+  width: 100%;
+}
+[data-dpr="2"] .sec_2 .jin_1,
+[data-dpr="2"] .sec_2 .tong_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .jin_1,
+[data-dpr="3"] .sec_2 .tong_1 {
+  font-size: 36px;
+}
+.sec_2 .jin_1 .div_1,
+.sec_2 .tong_1 .div_1 {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 1.25rem;
+  margin-top: 0.15625rem;
+}
+.sec_2 .jin_1 .div_1 .total_1,
+.sec_2 .tong_1 .div_1 .total_1 {
+  height: 1.09375rem;
+  line-height: 1.09375rem;
+  position: relative;
+}
+.sec_2 .jin_1 .div_1 .total_1 .zong,
+.sec_2 .tong_1 .div_1 .total_1 .zong {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sec_2 .jin_1 .div_1 .total_1 .total,
+.sec_2 .tong_1 .div_1 .total_1 .total {
+  margin-left: 0.09375rem;
+}
+.sec_2 .jin_1 .div_1 .total_1 .chong,
+.sec_2 .tong_1 .div_1 .total_1 .chong,
+.sec_2 .jin_1 .div_1 .total_1 .ti,
+.sec_2 .tong_1 .div_1 .total_1 .ti {
+  text-decoration: none;
+  position: absolute;
+  display: inline-block;
+  width: 1.875rem;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  border: 1px solid #1e1d1b;
+  border-radius: 0.3125rem;
+  text-align: center;
+}
+.sec_2 .jin_1 .div_1 .total_1 .ti,
+.sec_2 .tong_1 .div_1 .total_1 .ti {
+  right: 0.3125rem;
+  top: 0.25rem;
+}
+.sec_2 .jin_1 .div_1 .total_1 .chong,
+.sec_2 .tong_1 .div_1 .total_1 .chong {
+  right: 2.5rem;
+  top: 0.25rem;
+}
+.sec_2 .jin_1 .div_1 .remain_1,
+.sec_2 .tong_1 .div_1 .remain_1 {
+  height: 1.09375rem;
+  line-height: 1.09375rem;
+}
+.sec_2 .jin_1 .div_1 .remain_1 .yu,
+.sec_2 .tong_1 .div_1 .remain_1 .yu {
+  float: left;
+}
+.sec_2 .jin_1 .div_1 .remain_1 .remain,
+.sec_2 .tong_1 .div_1 .remain_1 .remain {
+  margin-left: 0.09375rem;
+}
+.sec_2 .jin_1 .div_1 .remain_1 .ke,
+.sec_2 .tong_1 .div_1 .remain_1 .ke {
+  margin-left: 0.09375rem;
+}
+.sec_2 .jin_1 .div_1 .remain_1 .ke_1,
+.sec_2 .tong_1 .div_1 .remain_1 .ke_1 {
+  float: left;
+  padding-left: 1.5625rem;
+}
+.sec_2 .jin_1 .div_2,
+.sec_2 .tong_1 .div_2 {
+  width: 100%;
+}
+.sec_2 .jin_1 .div_2 .list_2,
+.sec_2 .tong_1 .div_2 .list_2 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0.625rem;
+}
+.sec_2 .jin_1 .div_2 .list_2 .li_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 {
+  border-top: 0.03125rem solid #1e1d1b;
+  width: 100%;
+}
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 {
+  width: 100%;
+}
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li {
+  width: 100%;
+  height: 0.625rem;
+  line-height: 0.625rem;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li,
+[data-dpr="2"] .sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li,
+[data-dpr="3"] .sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li {
+  font-size: 36px;
+}
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li .type_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li .type_1,
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li .cash_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li .cash_1,
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li .re_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li .re_1,
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li .explain_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li .explain_1,
+.sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3 li .time_1,
+.sec_2 .tong_1 .div_2 .list_2 .li_1 .list_3 li .time_1 {
+  margin-left: 0.09375rem;
+}
+.sec_2 .tong_1 {
+  display: none;
+}
+.sec_2 .yin_1 {
+  display: none;
+  width: 100%;
+}
+.sec_2 .yin_1 p {
+  width: 100%;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  text-align: center;
+  font-size: 14px;
+}
+[data-dpr="2"] .sec_2 .yin_1 p {
+  font-size: 28px;
+}
+[data-dpr="3"] .sec_2 .yin_1 p {
+  font-size: 42px;
+}

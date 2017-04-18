@@ -333,7 +333,9 @@
 					"fonts/mui.ttf",
 					"images/ben.png",
 					"css/mui.min.css",
-					"css/reset.css"
+					"css/reset.css",
+					"user/sign.html",
+					"user/jifen.html"
 				],
 				"refer": [],
 				"priority": 0
@@ -341,6 +343,32 @@
 			"login/barcode_scan.html": {
 				"resources": [
 					"js/common.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/sign.html": {
+				"resources": [
+					"js/flexible_css.debug.js",
+					"images/xiao_1.png",
+					"css/sign.css",
+					"user/user.html",
+					"js/flexible.debug.js",
+					"js/jquery-1.10.1.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"user/jifen.html": {
+				"resources": [
+					"css/jifen.css",
+					"js/jifen.js",
+					"js/flexible_css.debug.js",
+					"js/flexible.debug.js",
+					"js/jquery-1.10.1.min.js",
+					"images/xiao_1.png",
+					"user/user.html",
+					"images/ben_1.png"
 				],
 				"refer": [],
 				"priority": 0

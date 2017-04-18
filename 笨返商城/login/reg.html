@@ -12,7 +12,6 @@
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/reg.css" />
 		<script src="../js/common.js"></script>
-		<script src="../js/jquery-1.10.1.min.js"></script>
 	</head>
 
 	<body>
@@ -63,7 +62,6 @@
 					var passwordBox = doc.getElementById('password');
 					var yan = doc.getElementById('yan');
 					var yanButton = doc.getElementById('yan_y');
-					
 					yanButton.addEventListener('tap', function (){
 						var reg = /^1[0-9]{10}$/;
 						if (!reg.test(accountBox.value)) {
@@ -122,13 +120,14 @@
 					});
 				});
 			}(mui, document));
-			
 			function scan(t, r, f){
+				var tui = document.getElementById('tui');
 				if(r){
-					$('#tui').val(r);
-				} else{
-					$('#tui').val('');
-				}
+					tui.value = r;
+				} 
+				else{
+					tui.value = '';
+				}	
 			}
 		</script>
 	</body>
