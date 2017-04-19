@@ -1,0 +1,161 @@
+body {
+  background: #dedede;
+}
+header {
+  width: 100%;
+  height: 1.28125rem;
+  position: relative;
+  border-bottom: 0.03125rem solid #1e1d1b;
+}
+header h1 {
+  background: #fff;
+  width: 100%;
+  height: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+}
+[data-dpr="2"] header h1 {
+  font-size: 24px;
+}
+[data-dpr="3"] header h1 {
+  font-size: 36px;
+}
+header .left {
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: url("../images/xiao_1.png") no-repeat center center;
+  background-size: 0.625rem 0.625rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+header .right {
+  position: absolute;
+  top: 0;
+  right: 0.3125rem;
+  font-size: 10px;
+}
+[data-dpr="2"] header .right {
+  font-size: 20px;
+}
+[data-dpr="3"] header .right {
+  font-size: 30px;
+}
+.sec_1 {
+  padding-top: 0.3125rem;
+  width: 100%;
+  height: 3.125rem;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-bottom: 0.03125rem solid #1e1d1b;
+}
+.sec_1 p {
+  flex-basis: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_1 p {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_1 p {
+  font-size: 36px;
+}
+.sec_2 {
+  width: 100%;
+}
+.sec_2 li {
+  height: 1.5625rem;
+  background: #fff;
+  border-bottom: 0.03125rem solid #1e1d1b;
+  position: relative;
+}
+.sec_2 li .left {
+  width: 1.25rem;
+  height: 1.25rem;
+  position: absolute;
+  top: 0.15625rem;
+  left: 0.15625rem;
+}
+.sec_2 li .right {
+  position: absolute;
+  top: 0;
+  left: 1.5625rem;
+  height: 1.5625rem;
+}
+.sec_2 li .right .nicheng_1 {
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: 0.15625rem;
+  left: 0;
+}
+[data-dpr="2"] .sec_2 li .right .nicheng_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 li .right .nicheng_1 {
+  font-size: 36px;
+}
+.sec_2 li .right .nicheng_1 .tui {
+  position: absolute;
+  top: 0;
+  right: 0.3125rem;
+}
+.sec_2 li .right .id_1 {
+  position: absolute;
+  top: 0.78125rem;
+  left: 0;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 li .right .id_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 li .right .id_1 {
+  font-size: 36px;
+}
+.sec_2 li .right .dengji {
+  position: absolute;
+  top: 0.78125rem;
+  right: 0.3125rem;
+  font-size: 12px;
+}
+[data-dpr="2"] .sec_2 li .right .dengji {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 li .right .dengji {
+  font-size: 36px;
+}
+.sec_2 .list_1 {
+  width: 100%;
+  position: relative;
+}
+.sec_2 .list_1 li {
+  width: 100%;
+}
+.sec_2 .list_1 li .right {
+  width: 8.4375rem;
+}
+.sec_2 .list_2 {
+  position: absolute;
+  right: 0;
+}
+.sec_2 .list_2 li {
+  width: 8.59375rem;
+}
+.sec_2 .list_2 li .right {
+  width: 7.03125rem;
+}
+.sec_2 .list_3 {
+  position: absolute;
+  right: 0;
+}
+.sec_2 .list_3 li {
+  width: 7.1875rem;
+}
+.sec_2 .list_3 li .right {
+  width: 5.625rem;
+}

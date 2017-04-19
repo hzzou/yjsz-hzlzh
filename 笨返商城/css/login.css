@@ -1,80 +1,122 @@
+body {
+  background: url(../images/01.jpg) no-repeat;
+  background-size: 100% 100%;
+}
 .wrap {
   width: 100%;
 }
 .wrap form {
-  width: 280px;
-  margin: 80px auto 0;
+  width: 8.75rem;
+  margin: 2.5rem auto 0;
 }
 .wrap form .div_1,
-.wrap form .div_2 {
+.wrap form .div_2,
+.wrap form .div_3 {
   position: relative;
-  background: #fff;
-  height: 40px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding-left: 5px;
-  width: 100%;
 }
 .wrap form .div_1 label,
-.wrap form .div_2 label {
+.wrap form .div_2 label,
+.wrap form .div_3 label {
   display: flex;
   justify-content: space-between;
-  width: 60px;
-  height: 40px;
-  line-height: 40px;
+  width: 1.25rem;
+  height: 1.25rem;
+  line-height: 1.25rem;
   padding: 0;
   font-size: 14px;
 }
+[data-dpr="2"] .wrap form .div_1 label,
+[data-dpr="2"] .wrap form .div_2 label,
+[data-dpr="2"] .wrap form .div_3 label {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_1 label,
+[data-dpr="3"] .wrap form .div_2 label,
+[data-dpr="3"] .wrap form .div_3 label {
+  font-size: 42px;
+}
 .wrap form .div_1 input,
-.wrap form .div_2 input {
+.wrap form .div_2 input,
+.wrap form .div_3 input {
   position: absolute;
   top: 0;
-  left: 70px;
-  width: 220px;
+  left: 1.5625rem;
+  width: 6.71875rem;
   box-sizing: border-box;
   height: 100%;
-  padding-left: 6px;
+  padding-left: 0.09375rem;
   font-size: 14px;
+}
+[data-dpr="2"] .wrap form .div_1 input,
+[data-dpr="2"] .wrap form .div_2 input,
+[data-dpr="2"] .wrap form .div_3 input {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_1 input,
+[data-dpr="3"] .wrap form .div_2 input,
+[data-dpr="3"] .wrap form .div_3 input {
+  font-size: 42px;
+}
+.wrap form .div_1,
+.wrap form .div_2 {
+  background: #fff;
+  height: 1.25rem;
+  margin-bottom: 0.3125rem;
+  box-sizing: border-box;
+  border-radius: 0.15625rem;
+  padding-left: 0.15625rem;
 }
 .wrap form .div_3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 120px auto 0;
-  width: 280px;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.3125rem;
 }
 .wrap form .div_3 button {
+  height: 1.25rem;
   background: #1cc91c;
   flex-basis: 100%;
   border: none;
-  border-radius: 5px;
-  color: #fff;
-  margin-bottom: 10px;
   font-size: 14px;
+  border-radius: 0.15625rem;
+  color: #fff;
+  margin-bottom: 0.3125rem;
+}
+[data-dpr="2"] .wrap form .div_3 button {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_3 button {
+  font-size: 42px;
 }
 .wrap form .error {
   display: none;
-  margin: 0 auto 10px;
-  width: 280px;
+  margin: 0 auto;
+  width: 8.75rem;
   box-sizing: border-box;
-  height: 30px;
-  line-height: 30px;
+  height: 0.9375rem;
 }
 .wrap form .error p {
-  height: 30px;
-  line-height: 30px;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
+  padding-left: 0.15625rem;
+  font-size: 12px;
   color: #f00;
-  text-indent: 2em;
+}
+[data-dpr="2"] .wrap form .error p {
+  font-size: 24px;
+}
+[data-dpr="3"] .wrap form .error p {
+  font-size: 36px;
 }
 .wrap .div_4 {
-  width: 280px;
-  margin: 20px auto 0;
-  height: 30px;
+  width: 8.75rem;
+  margin: 0 auto;
+  height: 0.9375rem;
 }
 .wrap .div_4 ul {
   width: 100%;
-  height: 30px;
+  height: 0.9375rem;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -84,11 +126,17 @@
 }
 .wrap .div_4 ul li a {
   display: inline-block;
-  width: 100px;
-  height: 30px;
-  line-height: 30px;
+  width: 3.125rem;
+  height: 0.9375rem;
+  line-height: 0.9375rem;
   color: #1e1d1b;
   font-size: 14px;
+}
+[data-dpr="2"] .wrap .div_4 ul li a {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap .div_4 ul li a {
+  font-size: 42px;
 }
 .mui-content,
 .mui-input-group,
@@ -99,4 +147,16 @@
 }
 .mui-error {
   padding: 0;
+}
+.mui-input-row .mui-input-clear ~ .mui-icon-clear {
+  width: 1.1875rem;
+  height: 1.1875rem;
+  font-size: 22px;
+  top: 0.3125rem;
+}
+[data-dpr="2"] .mui-input-row .mui-input-clear ~ .mui-icon-clear {
+  font-size: 44px;
+}
+[data-dpr="3"] .mui-input-row .mui-input-clear ~ .mui-icon-clear {
+  font-size: 66px;
 }

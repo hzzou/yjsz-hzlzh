@@ -6,25 +6,24 @@
 		<meta name="apple-touch-fullscreen" content="yes">
     	<meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>注册</title>
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/reset.css" />
-		<link rel="stylesheet" href="../css/reg.css" />
+		<link rel="stylesheet" href="../css/regi.css" />
+		<script type="text/javascript" src="../js/flexible.js" ></script>
 		<script src="../js/common.js"></script>
 	</head>
 
 	<body>
 		<div class="wrap">
-			<header class="mui-bar mui-bar-nav">
-			<a class="mui-icon mui-action-back mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">注册</h1>
-		</header>
+			<header>
+	    		<h1><span class="left mui-action-back"></span>注册</h1>
+			</header>
 		<div class="mui-content">
 			<form class="mui-input-group">
 				<div class="mui-input-row div_0">
 					<label><span>推</span><span>荐</span><span>人</span></label>
-					<input id='tui' type="text" class="mui-input" placeholder="推荐人">
+					<input id='tui' type="text" class="mui-input mui-input-clear" placeholder="推荐人">
 					<p>扫描获取推荐人<input class="btn_s" type="button" id="barcode_scan.html" onclick="clicked(this.id,true,true)" value="扫描获取推荐人"></p>
 				</div>
 				<div class="mui-input-row div_1">
@@ -33,7 +32,7 @@
 				</div>
 				<div class="mui-input-row div_4">
 					<label><span>验</span><span>证</span><span>码</span></label>
-					<input id="yan"  type="text" class="mui-input yan" placeholder="请输入验证码">
+					<input id="yan"  type="text" class="mui-input mui-input-clear yan" placeholder="请输入验证码">
 						<button id="yan_y" class="btn_y" type="button">获取验证码</button>
 				</div>
 				<div class="mui-input-row div_2">

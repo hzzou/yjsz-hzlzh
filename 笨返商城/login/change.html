@@ -6,19 +6,18 @@
 		<meta name="apple-touch-fullscreen" content="yes">
     	<meta name="apple-mobile-web-app-capable" content="yes" />
     	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>修改密码</title>
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/change.css" />
+		<script type="text/javascript" src="../js/flexible.js" ></script>
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">修改密码</h1>
-		</header>
 		<div class="mui-content wrap">
+			<header>
+	    		<h1><span class="left mui-action-back"></span>修改密码</h1>
+			</header>
 			<form class="mui-input-group">
 				<div class="mui-input-row div_1">
             	<label><span>手</span><span>机</span><span>号</span></label>
@@ -26,7 +25,7 @@
         </div>
         <div class="mui-input-row div_4">
             <label><span>验</span><span>证</span><span>码</span></label>
-            <input id="yan" class="mui-input yan" placeholder="请输入验证码" type="text" >
+            <input id="yan" class="mui-input mui-input-clear yan" placeholder="请输入验证码" type="text" >
             <button id="btn_y" class="btn_y" type="button">获取验证码</button>
         </div>
         <div class="mui-input-row mui-error  error"><p class="error_y">密码或手机号不正确</p></div>

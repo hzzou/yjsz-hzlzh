@@ -1,5 +1,5 @@
 body {
-  background: url("../images/01.jpg") no-repeat;
+  background: url(../images/01.jpg);
   background-size: 100% 100%;
 }
 .wrap {
@@ -41,6 +41,7 @@ body {
   width: 8.75rem;
   margin: 2.5rem auto 0;
 }
+.wrap form .div_0,
 .wrap form .div_1,
 .wrap form .div_2,
 .wrap form .div_4 {
@@ -54,44 +55,49 @@ body {
   width: 8.75rem;
   height: 1.25rem;
 }
+.wrap form .div_0 label,
 .wrap form .div_1 label,
 .wrap form .div_2 label,
 .wrap form .div_4 label {
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   width: 1.25rem;
   height: 1.25rem;
   line-height: 1.25rem;
   padding: 0;
-  font-size: 14px;
 }
+[data-dpr="2"] .wrap form .div_0 label,
 [data-dpr="2"] .wrap form .div_1 label,
 [data-dpr="2"] .wrap form .div_2 label,
 [data-dpr="2"] .wrap form .div_4 label {
   font-size: 28px;
 }
+[data-dpr="3"] .wrap form .div_0 label,
 [data-dpr="3"] .wrap form .div_1 label,
 [data-dpr="3"] .wrap form .div_2 label,
 [data-dpr="3"] .wrap form .div_4 label {
   font-size: 42px;
 }
+.wrap form .div_0 input,
 .wrap form .div_1 input,
 .wrap form .div_2 input,
 .wrap form .div_4 input {
   position: absolute;
   top: 0;
   left: 1.5625rem;
-  width: 7.03125rem;
   box-sizing: border-box;
   height: 100%;
   padding-left: 0.09375rem;
   font-size: 14px;
 }
+[data-dpr="2"] .wrap form .div_0 input,
 [data-dpr="2"] .wrap form .div_1 input,
 [data-dpr="2"] .wrap form .div_2 input,
 [data-dpr="2"] .wrap form .div_4 input {
   font-size: 28px;
 }
+[data-dpr="3"] .wrap form .div_0 input,
 [data-dpr="3"] .wrap form .div_1 input,
 [data-dpr="3"] .wrap form .div_2 input,
 [data-dpr="3"] .wrap form .div_4 input {
@@ -100,6 +106,53 @@ body {
 .wrap form .div_1 input,
 .wrap form .div_2 input {
   width: 6.25rem;
+}
+.wrap form .div_0 #tui {
+  position: absolute;
+  top: 0;
+  left: 1.5625rem;
+  width: 3.4375rem;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 0.09375rem;
+  font-size: 14px;
+}
+[data-dpr="2"] .wrap form .div_0 #tui {
+  font-size: 28px;
+}
+[data-dpr="3"] .wrap form .div_0 #tui {
+  font-size: 42px;
+}
+.wrap form .div_0 .mui-icon-clear {
+  right: 3.125rem;
+}
+.wrap form .div_0 p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #1cc91c;
+  width: 3.125rem;
+  height: 100%;
+  line-height: 1.25rem;
+  text-align: center;
+  border-radius: 0.15625rem;
+  color: #fff;
+  font-size: 12px;
+}
+[data-dpr="2"] .wrap form .div_0 p {
+  font-size: 24px;
+}
+[data-dpr="3"] .wrap form .div_0 p {
+  font-size: 36px;
+}
+.wrap form .div_0 p .btn_s {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3.125rem;
+  height: 100%;
+  opacity: 0;
+  border: none;
 }
 .wrap form .div_3 {
   display: flex;
@@ -128,14 +181,15 @@ body {
   display: none;
   width: 100%;
   box-sizing: border-box;
-  padding-left: 0.625rem;
   height: 0.9375rem;
+  margin: 0;
 }
 .wrap form .error p {
   height: 0.9375rem;
   line-height: 0.9375rem;
   font-size: 12px;
   color: #f00;
+  padding-left: 0.3125rem;
 }
 [data-dpr="2"] .wrap form .error p {
   font-size: 24px;
@@ -143,11 +197,14 @@ body {
 [data-dpr="3"] .wrap form .error p {
   font-size: 36px;
 }
+.wrap form .div_4 .mui-icon-clear {
+  right: 3.125rem;
+}
 .wrap form .div_4 input {
   position: absolute;
   top: 0;
   left: 1.5625rem;
-  width: 3.125rem;
+  width: 3.4375rem;
   box-sizing: border-box;
   height: 100%;
   padding-left: 0.09375rem;
@@ -158,9 +215,6 @@ body {
 }
 [data-dpr="3"] .wrap form .div_4 input {
   font-size: 42px;
-}
-.wrap form .div_4 .mui-icon-clear {
-  right: 3.125rem;
 }
 .wrap form .div_4 .btn_y {
   position: absolute;

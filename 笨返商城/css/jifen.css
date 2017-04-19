@@ -3,17 +3,11 @@ body {
 }
 header {
   width: 100%;
-  height: 1.25rem;
+  height: 1.28125rem;
   background: #fff;
   color: #1e1d1b;
   position: relative;
-  font-size: 12px;
-}
-[data-dpr="2"] header {
-  font-size: 24px;
-}
-[data-dpr="3"] header {
-  font-size: 36px;
+  border-bottom: 0.03125rem solid #000;
 }
 header h1 {
   font-size: 12px;
@@ -57,7 +51,6 @@ header h1 .right {
 .sec_1 {
   width: 100%;
   height: 3.125rem;
-  border-top: 0.03125rem solid #1e1d1b;
 }
 .sec_1 img {
   width: 100%;
@@ -87,7 +80,7 @@ header h1 .right {
   box-sizing: border-box;
   width: 33.33333333%;
   border-right: 0.03125rem solid #1e1d1b;
-  margin-right: -1px;
+  margin: -1px;
   text-align: center;
 }
 .sec_2 .list_1 li:last-of-type {
@@ -119,9 +112,19 @@ header h1 .right {
 }
 .sec_2 .jin_1 .div_1 .total_1,
 .sec_2 .tong_1 .div_1 .total_1 {
+  font-size: 12px;
+  color: #000;
   height: 1.09375rem;
   line-height: 1.09375rem;
   position: relative;
+}
+[data-dpr="2"] .sec_2 .jin_1 .div_1 .total_1,
+[data-dpr="2"] .sec_2 .tong_1 .div_1 .total_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .jin_1 .div_1 .total_1,
+[data-dpr="3"] .sec_2 .tong_1 .div_1 .total_1 {
+  font-size: 36px;
 }
 .sec_2 .jin_1 .div_1 .total_1 .zong,
 .sec_2 .tong_1 .div_1 .total_1 .zong {
@@ -137,6 +140,7 @@ header h1 .right {
 .sec_2 .tong_1 .div_1 .total_1 .chong,
 .sec_2 .jin_1 .div_1 .total_1 .ti,
 .sec_2 .tong_1 .div_1 .total_1 .ti {
+  color: #000;
   text-decoration: none;
   position: absolute;
   display: inline-block;
@@ -159,8 +163,18 @@ header h1 .right {
 }
 .sec_2 .jin_1 .div_1 .remain_1,
 .sec_2 .tong_1 .div_1 .remain_1 {
+  font-size: 12px;
+  color: #000;
   height: 1.09375rem;
   line-height: 1.09375rem;
+}
+[data-dpr="2"] .sec_2 .jin_1 .div_1 .remain_1,
+[data-dpr="2"] .sec_2 .tong_1 .div_1 .remain_1 {
+  font-size: 24px;
+}
+[data-dpr="3"] .sec_2 .jin_1 .div_1 .remain_1,
+[data-dpr="3"] .sec_2 .tong_1 .div_1 .remain_1 {
+  font-size: 36px;
 }
 .sec_2 .jin_1 .div_1 .remain_1 .yu,
 .sec_2 .tong_1 .div_1 .remain_1 .yu {
@@ -191,7 +205,7 @@ header h1 .right {
 }
 .sec_2 .jin_1 .div_2 .list_2 .li_1,
 .sec_2 .tong_1 .div_2 .list_2 .li_1 {
-  border-top: 0.03125rem solid #1e1d1b;
+  border-top: 1px solid #1e1d1b;
   width: 100%;
 }
 .sec_2 .jin_1 .div_2 .list_2 .li_1 .list_3,

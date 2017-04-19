@@ -335,7 +335,8 @@
 					"css/mui.min.css",
 					"css/reset.css",
 					"user/sign.html",
-					"user/jifen.html"
+					"user/jifen.html",
+					"js/jquery-1.10.1.min.js"
 				],
 				"refer": [],
 				"priority": 0
@@ -368,7 +369,8 @@
 					"js/jquery-1.10.1.min.js",
 					"images/xiao_1.png",
 					"user/user.html",
-					"images/ben_1.png"
+					"images/ben_1.png",
+					"js/mui.js"
 				],
 				"refer": [],
 				"priority": 0

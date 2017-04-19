@@ -9,7 +9,7 @@
   }
 }
 body{
-  background:url("../images/01.jpg") no-repeat;
+  background:url(../images/01.jpg);
   background-size:100% 100%;
 }
 .wrap {
@@ -42,7 +42,7 @@ body{
   form{
     width:560/@rem;
     margin:160/@rem auto 0;
-    .div_1, .div_2, .div_4{
+    .div_0, .div_1, .div_2, .div_4{
       position:relative;
       margin:0 auto;
       box-sizing:border-box;
@@ -53,18 +53,17 @@ body{
       width:560/@rem;
       height:80/@rem;
       label{
+        .font-size();
         display:flex;
         justify-content:space-between;
         width:80/@rem;
         height:80/@rem;
         line-height:80/@rem;
         padding:0;
-        .font-size();
       }
       input{
         position:absolute;
         top:0; left:100/@rem;
-        width:450/@rem;
         box-sizing:border-box;
         height:100%;
         padding-left:6/@rem;
@@ -72,8 +71,42 @@ body{
       }
     }
     .div_1, .div_2{
-      input{
-          width:400/@rem;
+        input{
+            width:400/@rem;
+        }
+    }
+    .div_0{
+      #tui{
+        position:absolute;
+        top:0; left:100/@rem;
+        width:220/@rem;
+        box-sizing:border-box;
+        height:100%;
+        padding-left:6/@rem;
+        .font-size(14px);
+      }
+      .mui-icon-clear{
+        right:200/@rem;
+      }
+      p{
+        position:absolute;
+        top:0; right:0;
+        background:#1cc91c;
+        width:200/@rem;
+        height:100%;
+        line-height:80/@rem;
+        text-align:center;
+        border-radius:10/@rem;
+        color:#fff;
+        .font-size(12px);
+        .btn_s{
+          position:absolute;
+          top:0; right:0;
+          width:200/@rem;
+          height:100%;
+          opacity:0;
+          border:none;
+        }
       }
     }
     .div_3{
@@ -97,28 +130,28 @@ body{
       display:none;
       width:100%;
       box-sizing:border-box;
-      padding-left:40/@rem;
       height:60/@rem;
+      margin:0;
       p{
         height:60/@rem;
         line-height:60/@rem;
         .font-size(12px);
         color:#f00;
+        padding-left:20/@rem;
       }
     }
     .div_4{
-      
+      .mui-icon-clear{
+        right:200/@rem;
+      }
       input{
         position:absolute;
         top:0; left:100/@rem;
-        width:200/@rem;
+        width:220/@rem;
         box-sizing:border-box;
         height:100%;
         padding-left:6/@rem;
         .font-size(14px);
-      }
-      .mui-icon-clear{
-        right:200/@rem;
       }
       .btn_y{
         position:absolute;

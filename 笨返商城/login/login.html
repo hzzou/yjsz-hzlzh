@@ -6,24 +6,24 @@
 		<meta name="apple-touch-fullscreen" content="yes">
     	<meta name="apple-mobile-web-app-capable" content="yes" />
    		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>登录</title>
 		<link href="../css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/login.css" />
+		<script type="text/javascript" src="../js/flexible.js"></script>
 	</head>
 	<body>
-		<div class="mui-content wrap">
+		<div class="mui-content wrap mui-row">
 			<form id='login-form' class="mui-input-group">
 				<div class="mui-input-row div_1">
 					<label><span>手</span><span>机</span><span>号</span></label>
-					<input id='account' type="text" class="mui-input-clear mui-input tel" placeholder="请输入手机号">
+					<input id='account' type="text" class="mui-input-clear tel" placeholder="请输入手机号">
 				</div>
 				<div class="mui-input-row div_2">
 					<label><span>密</span><span>码</span></label>
-					<input id='password' type="password" class="mui-input-clear mui-input pass_1" placeholder="请输6-14位入密码">
+					<input id='password' type="password" class="mui-input-clear pass_1" placeholder="请输6-14位入密码">
 				</div>
-				<div class="mui-input-row mui-error error"><p>密码或手机号不正确</p></div>
+				<div class="mui-error error"><p>密码或手机号不正确</p></div>
 				<div class="div_3">
 					<button type="button" id="login" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
 					<button type="button" id="auth" class="btn_w mui-btn mui-btn-block mui-btn-primary">微信授权</button>
@@ -45,8 +45,7 @@
 				});
 				$.plusReady(function() {
 					plus.screen.lockOrientation("portrait-primary");
-					//var settings = app.getSettings();
-					//var state = app.getState();
+			
 					var mainPage = $.preload({
 						"id": 'main',
 						"url": '../user/user.html'
@@ -102,6 +101,7 @@
 								error:function(xhr,type,errorThrown){
 									waiting.close();
 									plus.nativeUI.alert(type);
+									toMain();
 								}	
 							});	
 						}
@@ -130,8 +130,8 @@
 											type:'post',//HTTP请求类型
 											timeout:10000,//超时时间设置为10秒；
 											success:function(data){
-												//waiting.close();
-												//toMain();
+												waiting.close();
+												toMain();
 											},
 											error:function(xhr,type,errorThrown){
 												waiting.close();
